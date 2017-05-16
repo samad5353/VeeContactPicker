@@ -23,10 +23,12 @@
     if (self) {
         
         _contactImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-        _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 82, 90, 10)];
+        _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 70, 60, 10)];
         _removeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         
-        [_removeButton setFrame:CGRectMake(50, 15, 20, 20)];
+        [_nameLabel setFont:[UIFont fontWithName:@"Helvetica Neue" size:12.0f]];
+        _nameLabel.textAlignment = NSTextAlignmentCenter;
+        [_removeButton setFrame:CGRectMake(40, 15, 20, 20)];
         [_removeButton setTitle:@"X" forState:UIControlStateNormal];
         [_removeButton setBackgroundColor:[UIColor grayColor]];
         [_removeButton.layer setCornerRadius:10];
@@ -35,6 +37,7 @@
         [_removeButton addTarget:self action:@selector(removeButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_contactImageView];
         [self addSubview:_removeButton];
+        [self addSubview:_nameLabel];
         _contactImageView.center = self.contentView.center;
         [_contactImageView.layer setCornerRadius:_contactImageView.bounds.size.width/2];
         [_contactImageView setClipsToBounds:YES];
@@ -65,7 +68,6 @@
     if(_removeContactClickedBlock) {
         _removeContactClickedBlock([sender tag]);
     }
-    
 }
 
 @end
