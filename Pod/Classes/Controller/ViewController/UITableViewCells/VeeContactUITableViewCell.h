@@ -9,5 +9,6 @@
 
 @property (strong, nonatomic) UIImageView* contactImageView;
 @property (strong, nonatomic) UILabel* primaryLabel;
+@property (strong, nonatomic) UIButton *selctionCheckButton;
 
 @end

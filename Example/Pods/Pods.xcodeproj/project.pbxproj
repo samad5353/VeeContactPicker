@@ -7,265 +7,267 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011CD3B1F5EDDBBF0C4E242E4C42C937 /* AGCDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D66E56D894AD0A54D1C136AAC64A97B /* AGCDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0377DA3D4198F9D89E0032382725F260 /* VeeABRecordsImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D64373EC19BAEA74F74409AA17E0787 /* VeeABRecordsImporter.m */; };
-		03EF931564978791D4ABC400F3FDDBED /* OCMVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 898CD33A1775942785B2C1C7FAE26CC9 /* OCMVerifier.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		044AED427DF6474AC4582F2466E94046 /* VeeContactProtFactoryProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EE84FFABB3A0ED51F5E83034D9BF8E /* VeeContactProtFactoryProducer.m */; };
-		046937EA1C4859D4D96EFA7B7687E441 /* OCMBlockCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58FB89778628537624CC42F9038C4D /* OCMBlockCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		06878AA07B3F1F28E6F043788A283D0E /* AGCObjectDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD79B66E49C3E247EB7660451C6FCEE /* AGCObjectDescription.m */; };
-		082D917DB4036BF4273E7C310B0B8F13 /* VeeContactUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA771448C077757494B3484ADCB233 /* VeeContactUITableViewCell.m */; };
-		0875ED313E66CF3851DBE79281A9C081 /* VeeContactPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6DB6B7CA0EC4AD36F493A7F1CFDCD1 /* VeeContactPickerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0934D3DAC27331C1569A357A677B2206 /* NSMethodSignature+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF5B4872CEFA7A527B6931C8F885BB1 /* NSMethodSignature+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0A7C4089DBD8BD40374AFA8EEAB7CA3C /* OCMPassByRefSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6587402262810F604E2B2B1733EF41 /* OCMPassByRefSetter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0B0502AF70AA559F30AF00FE39F90F0D /* NSObject+VeeCommons.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FD3750BD1AE44198E9DC7B600B1F3E /* NSObject+VeeCommons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DF9AB1E4C5F08DEF14471A718569228 /* UIView+FLKAutoLayoutPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = D73714CCAE1E8328100523B32B5B6B95 /* UIView+FLKAutoLayoutPredicate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0EE98780873CB1A29EE8B4A36BA7E14A /* OCMFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = BE377E085572154EE2EE633D9ABB5383 /* OCMFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0EFF617FB3B7722390581B4382E5DD28 /* UIView+FLKAutoLayoutDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2043CA841B584AFDFB5F583C3A517F /* UIView+FLKAutoLayoutDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FDEFCB2A88CD26EB7EDA2A363161F7F /* NSObject+AGCDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 47AC563C1926E436FA9501CE16574141 /* NSObject+AGCDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10567B56690A279DAE2A66E675D05CA0 /* AGCObjectInCollectionDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A964633C211071BB3843108ADD8A0D /* AGCObjectInCollectionDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10AEAD2136880EEE7E771F533331F250 /* OCMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E06C06259A15D1CE198BC7D6B571014 /* OCMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10B4F2DFF553C26B3EC79345D1446FB3 /* AGCPropertiesExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = D977E64328A2F1A52462990B9C0DC5A3 /* AGCPropertiesExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		149DE9C6DB74B12EFF07D185484D946F /* NSInvocation+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 319E78A476C8FC42AAB9D5289635B079 /* NSInvocation+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1586CD3BDB1E92D87A0E423AAC313FD4 /* OCMObserverRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = C900D4272736D6FC063816B4F897F2AD /* OCMObserverRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		161FCAEBB91E6B5AADF642B85617CB72 /* NSObject+VeeCommons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F783B5A3F046A16C857042698C3C4B7 /* NSObject+VeeCommons.m */; };
-		1B383B28884CE8D38CB9C19E440FAA35 /* VeeContactProt.h in Headers */ = {isa = PBXBuildFile; fileRef = B92EF1482E004C6FE3EC3828EADB23CE /* VeeContactProt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B79AFE58958B3B3B00437C058BC15FA /* VeeContactPickerStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = DB155CA9303BA48DE02FFB030A9022A5 /* VeeContactPickerStrings.m */; };
-		1B7E21160BEF08CC76BA8C17E94E455A /* OCMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B40C0501F5C3E66B7A158F6AAFCD3 /* OCMLocation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1B8A4D0A4870037490F3FEC4E1CB9676 /* FLKAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE828074361C2CD5777E412B50FCBC4A /* FLKAutoLayout-dummy.m */; };
-		1F202F43B21B79AF717A282AAA064BDE /* UIView+FLKAutoLayoutPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663961CD87063C2C34F84520AE5B962 /* UIView+FLKAutoLayoutPredicate.m */; };
-		2033A8B7260BE31D4C42E58524841091 /* UIViewController+FLKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 737E7E7721BD959346A98B184C2C2B05 /* UIViewController+FLKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20C39DB909C33B491D60F23FA1D415C2 /* OCMRealObjectForwarder.m in Sources */ = {isa = PBXBuildFile; fileRef = A50AF4220644031707A33A41DA9640AD /* OCMRealObjectForwarder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		226FAF6FEF72A2B6D64E7788FF510482 /* VeeContactPickerOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5904D5B2CAAFB1C27E5464E478B490 /* VeeContactPickerOptions.m */; };
-		24C6EC13D77D90510EF4D04BC4E370E8 /* VeeContactProtFactoryProducer.h in Headers */ = {isa = PBXBuildFile; fileRef = B4398768DB1E8C98E9EDA5CC5176BDC0 /* VeeContactProtFactoryProducer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2706707CCA84C103759489B176410716 /* VeePostalAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2B9FF47F393BFD3D00CA4C6D472686 /* VeePostalAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		287D332DAFE39E0D85746325F224AFF8 /* VeeTableViewSearchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF40A166ADD7C20CAA3045BD9174043 /* VeeTableViewSearchDelegate.m */; };
-		2D3E0C6F00D37B363ABA3BB855E3D0F8 /* UIImageView+AGCInitials.h in Headers */ = {isa = PBXBuildFile; fileRef = AF103C80C738F799C250ACEAC2E25066 /* UIImageView+AGCInitials.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3041D6972C8CED7EC4E67F50508E0800 /* VeeContactFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BD577A1830158B0AE190BE987971 /* VeeContactFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		313872D4506542E78EDFE61ED2823939 /* VeeSectionedArrayDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C43448461CB6189112CB560FB090082 /* VeeSectionedArrayDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3152811CD17686AA726713BFE3612206 /* OCMConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D124E37AFFB572BADA60F56E05E9DE /* OCMConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		330B2113D9AC4711E2DFD37C89D45A4D /* VeeABRecordsImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3346084A00A520CF0DE7F8803E99A2D4 /* VeeABRecordsImporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33C4E9CA4B43CD4C468B338E2ED06860 /* OCMVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 02056F54349B198AA0CC5CE08B96AE59 /* OCMVerifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		33EDDB8EB7F5F5AC3F018E38DB91E350 /* Pods-VeeContactPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817F5E07DC7EA0EA2BCA0E4CBD5C18A /* Pods-VeeContactPicker_Example-dummy.m */; };
-		34E1601BAE8356AFD46D81BAD7C26F1C /* VeeContactFactoryProt.h in Headers */ = {isa = PBXBuildFile; fileRef = 319626FF1240A796310E0AFF142EE7C0 /* VeeContactFactoryProt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36032097F01A22F823C1665F6D0E68F7 /* VeeContactPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8445A0B515FC3DA111E4F3993BDD2073 /* VeeContactPicker-dummy.m */; };
-		3A769EE15211B7EBBAF4B1C8AD542502 /* OCMFunctionsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9F19A83433D69294262A691AABA3FC /* OCMFunctionsPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3EEE56426C5838CA2F13E8F95B594401 /* OCMRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E71912A3E25AC91576E60454E3F80166 /* OCMRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4076D8704756B0D751A780A580D26E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		40B2ABF25812A14D83A05D8937FBDB7B /* OCProtocolMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F0CD3DFC21AD864884B33E9D81101259 /* OCProtocolMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		436C9F43F49A967F0C1D6152E57D1234 /* VeeContactPickerStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F8D9BE32F384D05D69472AE17AA2BE /* VeeContactPickerStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45FDA65652E689A16B1DC1CF55DAFEAC /* UIImageView+AGCInitials.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C301ACCCF380D1DC36F12613DA82D9 /* UIImageView+AGCInitials.m */; };
-		46F3D9073A49A46E11896B47E3506308 /* NSObject+FLKAutoLayoutDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 86706F890CD5DD9A793961697D6FC461 /* NSObject+FLKAutoLayoutDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48389DBBD3B1D7CC6E645DA7D5677217 /* AGCPropertyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA183AB9D6E4AC38C6DEFD8880D327 /* AGCPropertyDescription.m */; };
-		48547BFBFFEDF5F6BD92DC4C2C6D0831 /* UILabel+VeeBoldify.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFB9E4E397FF1D00E7C627646158A4 /* UILabel+VeeBoldify.m */; };
-		4BFB9965B0A737D430EFD0A07774A029 /* VeeContactUITableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B32C3EC1FD9EEC9485CD59EDBA7C212 /* VeeContactUITableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CF0A4AD04F2F3CF7465991A5E76AD47 /* OCMStubRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B4A2A2EADF7A4343619C4091215AAF /* OCMStubRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		54756B2926CF0AB9333A743FBF6E7FAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		5515E186952EC5F61A7AC018F6E30EDC /* AGCPropertiesExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD030DA0662F29CFE744FF30835083E /* AGCPropertiesExtractor.m */; };
-		55EA7FCA2F507BCC25959CE95D295A8C /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB6C93CB5902F6A08B8450397A326F8 /* OCMConstraint.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		55F2C7C98AB5E300663D064AAA64B80B /* OCMArgAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1930C2D253A4A48E1624AF704D15BD5C /* OCMArgAction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		562C4A7A171B6F0000B132E22372C3DA /* OCPartialMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EFF312410F5E9D1D87D974F1DFD2151 /* OCPartialMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		582B00F67CBF8BEA0A55BC7033ED1494 /* VeeContact.h in Headers */ = {isa = PBXBuildFile; fileRef = E06F59538C6908D468FECC36790A0A12 /* VeeContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59BC54DA90AD2433D20358F9853622CA /* OCMMacroState.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB41A583EFDAC3D2432281134B5F0E1 /* OCMMacroState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		59C10F5CA2C5ACE71EF5CB06AB2B6D38 /* Pods-VeeContactPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA0C8AB969038AE895FB833FD239F9 /* Pods-VeeContactPicker_Tests-dummy.m */; };
-		59C75CD8215C7901D7ADFC352979D969 /* AGCInitialsColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 6432C154496824119F57FBA34FDD1F27 /* AGCInitialsColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A71C7EA33ECA4D47E8863E0B89D392A /* AGCObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C89908061BAB4DDC40D6F2F4A1D02757 /* AGCObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BB246B2587EBC3E5597DBD6CD33777F /* NSMethodSignature+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFF23ACAC33D4FD985B70619F85EB66 /* NSMethodSignature+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5BD416FA8039137FF54B9965E191BF0C /* VeeContactPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3FCE01B80A14D7239210BD75B76853 /* VeeContactPickerViewController.xib */; };
-		5D53D3C353E4F054A1E358E10F896E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		5EB7D7B7B81CDF7FBFF0D743117E9A2A /* VeeContactPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB88223BAE4246622164357F6E351993 /* VeeContactPickerViewController.m */; };
-		5EE2FCF8979602654020E4491F14DD8C /* VeeSectionedArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E64A9A991B4C12690F6C9641BC77A /* VeeSectionedArrayDataSource.m */; };
-		5F04262019BBB326960E643861626099 /* OCMExceptionReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF6C78322378BFFCC5ECE99835D0AA5 /* OCMExceptionReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		651F3096B56BFF131C5F956001D7BAAB /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DA567F5946CD672B2B0B84D7482660 /* OCMArg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		672FE514B7C1EB583AF6CEB2538025A7 /* OCMBoxedReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB710BF2ED5437A0857FE3D1FF237F8 /* OCMBoxedReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6AEE310AE72BE52F3AA7F06EAA18D19E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		6C8CDC3F7D55178CB63585D62714D5C8 /* VeeCommons.h in Headers */ = {isa = PBXBuildFile; fileRef = A5338BF88D4C38A17EBC0F1D76CF7F79 /* VeeCommons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D2AD1DFA8F27BA0EBB3365A5AF7AC1B /* OCMExpectationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 15929268E68AA99F8BFB5FDA16C6B77B /* OCMExpectationRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		70AC31D0736F568C0386716176361D09 /* OCMInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE070E716F78B296955E66FE2EFEAA3 /* OCMInvocationMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		71899DFD8094C412FFC39669279B4533 /* OCMBlockArgCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A5B0856F4A4E98812FA520F40AC97F /* OCMBlockArgCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7BFB91B8763406120122EE861A9742FC /* AGCObjectInCollectionDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 58866C8C25600DDBB086323020E5A443 /* AGCObjectInCollectionDescription.m */; };
-		7E874589704BD228F1B7A3FA95345A3F /* UIViewController+FLKAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFDFB75C6CA655875C835951EFD195 /* UIViewController+FLKAutoLayout.m */; };
-		7EE0FD33AB30006545874DEF02F9243E /* OCMNotificationPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D7CBDDE4407A20A720533F54A7BEDC /* OCMNotificationPoster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7FFCEEC0036EC9E7A5D3BAD719B28D4A /* NSNotificationCenter+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A89685C375AF27C03840B6341F4BC73 /* NSNotificationCenter+OCMAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82AD42EB689BD921E670FC8304085D54 /* VeeTableViewSearchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE6758691CD3A8478B6B675674F2062 /* VeeTableViewSearchDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		830B3A29668D59C62571A4CE4D3BAFCA /* OCMIndirectReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C007ADD444B580ADB3C95728E99D3B49 /* OCMIndirectReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		87AA263FA688A8E92C2B8ADEE72C98C6 /* OCMObserverRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B76F7AFB31C4D10BE668F69F9CA7AE /* OCMObserverRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8A1370FF0DD475F945954535A988ED4B /* OCMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 820BDEC6AD8C2A2F9A119352D8298F93 /* OCMockObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8AA92B2AC942FE15A538D74B48E49BE0 /* VeeAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C181BA174C3C70026EB3449099634 /* VeeAddressBook.m */; };
-		8BA0DA2EE7126A3F858D7B78102690F3 /* VeeContactPickerOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BCB812A2AB3203A8992ED5AC188A7F1 /* VeeContactPickerOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C0754FA783861F33D4EFA70FE849734 /* VeeABRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CACBD8F96EB952C36F94FDF6DFF4ECCC /* VeeABRecord.m */; };
-		8D40AF80800C0D4A691F4A0656E53D98 /* OCMRealObjectForwarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B25B115B0CF5704BF0E03AD460EFD /* OCMRealObjectForwarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8D9A8D1FCB6566E99E0A87E9E9149DDC /* VeeCommons.m in Sources */ = {isa = PBXBuildFile; fileRef = C12973F8466CFBB121438E55ED99775B /* VeeCommons.m */; };
-		9081CF86AC00822660ECD10A6C5F5746 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		91D4268327BFFA7F87B6701126111344 /* UIView+FLKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 14623B0A17AC4214CC4C3C5364AE336F /* UIView+FLKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94216C983E91F2BA503920465DE1972A /* OCClassMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4DF127AA0CB4594883DABE30EFA8A9 /* OCClassMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		94DE8D9DF0754A38F0B142B0AFA99095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		950C209E1D004EBDCD43D6C2136B5AA2 /* OCMStubRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 076C4A6417ECC25A434877F6C7D8B112 /* OCMStubRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95222EEAB12A518FF1D6AD30040EF33E /* NSObject+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077D0C1C21BFA883F2C47DD58B5589B /* NSObject+FLKAutoLayoutDebug.m */; };
-		95D66AA1D8764C1F1A4C95B7C59CC9BB /* UIImageView-AGCInitials-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4808934F315883BE7B5856D6146E2 /* UIImageView-AGCInitials-dummy.m */; };
-		96DEE9FBBACC859401C9D19E5D3105E0 /* VeeContactCellConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F26B372F371525E7B9B9BF68197A1B1 /* VeeContactCellConfiguration.m */; };
-		977CA91DA00FF3943F25E9D1FC645681 /* AGCPropertyProt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0897E1C06B7B401A8788CE5129F206A8 /* AGCPropertyProt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A18E4E77F26C271DFCA43E3BFA6921F /* FLKAutoLayoutPredicateList.h in Headers */ = {isa = PBXBuildFile; fileRef = C748C6E66F6F677234E9BBF9A1FAC35E /* FLKAutoLayoutPredicateList.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9A8DFD6F18DA5BD2CA9B8053DC259F7E /* AGCObjectDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F79C21E60A12864BD35CCE34F163F7F /* AGCObjectDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C195CB2280DCD3183057794B4504B22 /* OCMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = D40B0A3E41BA96035603D2B5124C353C /* OCMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ED6B48F0C000C83C89249483D3398A6 /* OCMFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F48CC9EA168978D41208F7D10ED9A /* OCMFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A425B4C6EAA79B2C9BB4F374180DC194 /* NSValue+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 23E767939B9EDA4762E287ADE64A5E16 /* NSValue+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A516CB608A827C4FEA550CB372854AF7 /* OCMReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 126EDE5D404D3A45E2202A44081C7EA7 /* OCMReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		AB70EA6A45DCAD59203B6D3AA2772823 /* AGCDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF17CC39A8C073FBBEEF36B3297E97D /* AGCDescription.m */; };
-		AD2B0D27CCCE4B9879AFB3BF8F9DC579 /* AGCInitialsColors.m in Sources */ = {isa = PBXBuildFile; fileRef = D3936D1A4B1B67B7F9B76253640B73F4 /* AGCInitialsColors.m */; };
-		AD2E1DF1D10C40DDC63BF28AB6F29546 /* VeeContactFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E39AD68129286F237B96CDAAF0751DD1 /* VeeContactFactory.m */; };
-		AD672A92EF1A71CB35F77D51924A63D7 /* OCMInvocationStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 9566542921C9B7A70852CD6A75959877 /* OCMInvocationStub.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AFB18765BF37F902931EC416680F7863 /* VeeSectionable.h in Headers */ = {isa = PBXBuildFile; fileRef = 37244244BEEC7A92D642AB8993F9D78B /* VeeSectionable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0152C2CC347464BFC138898568E0FD4 /* VeeContactPickerAppearanceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CD30E3063BEA6F5DCB2BCE235DA7AE09 /* VeeContactPickerAppearanceConstants.m */; };
-		B1A99F49DAF9B0C1D4B9C09B77A35DEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		B28B82281F2A75B1A27E9B1B289B179D /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5474C4BB5D8A5ACCC787C839AB4AE /* OCClassMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B2A113E7CE895B4CD8AE075076905B47 /* VeeABDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D865B20D6A414B5008B47FD35BF450E4 /* VeeABDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B36995CF7E36CC57C8C118EC5EC049A6 /* OCMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6930CABAF9B7D693E5C79ED03EA45D /* OCMock-dummy.m */; };
-		B4D6973B3F74EB04E719BFCFCBF04C0B /* OCMInvocationStub.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1C99E5AD7ED56A70844B492C1679F /* OCMInvocationStub.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B5A894C2AC2DBEE25329D399DC5E84A3 /* AGCPropertyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 297931920CA7512F6606A22AFC9B87E4 /* AGCPropertyConstants.m */; };
-		B645B16DDC5212E729A60FDE3F439278 /* UILabel+VeeBoldify.h in Headers */ = {isa = PBXBuildFile; fileRef = 63109F29F517BE16E789DE8795C323D1 /* UILabel+VeeBoldify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9E61D766AF991D23344A22B8F1CD1A1 /* VeePostalAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 368F1522BC99C2F7766A8611FF3F6171 /* VeePostalAddress.m */; };
-		BC7143B82E45DDE808B1D8E8F6970E41 /* OCMInvocationExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = E7BAF40D179955B6819A9864B89CC03D /* OCMInvocationExpectation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C01520F21314A4A11E0BD5C9BE190A1A /* OCMExpectationRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C600EC0D79AAC57119C32733E16476 /* OCMExpectationRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C11D7D634379188EAD10402E14688994 /* AGCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8A572396F55E496847B3044E6A611F /* AGCObject.m */; };
-		C389E0223F8EEA143FA6575BC6FCFEB1 /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC471859A5B0E289481324ECF6F7F5EC /* NSLayoutConstraint+FLKAutoLayoutDebug.m */; };
-		C4235F3704F471BAF74CB4482A99D340 /* OCMReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A2557835640C27067E65FD0383B7260D /* OCMReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C508640C7607A5BE183916AC4202A026 /* OCMInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7363EB666A06F898301382F18132761D /* OCMInvocationMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C55C0B0594D26DE09DEC7F161910A211 /* OCObserverMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 529058C92ADB00DD2D932CA4866155A3 /* OCObserverMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C6DEDAD5B01946A2644F428020F881B6 /* OCObserverMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D764D958929D2E08DD4D5C1613C89E /* OCObserverMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C796F27878B148315E4EB60535EEA4BE /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4303F45EAF0909926CC296CFC7061481 /* OCMLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7E461A7AC3EE03988635917DE0DD50C /* AGCObjectInCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F9F4D833BDE0AB0BAAFDA6CE6784ADD /* AGCObjectInCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C90DAABFA1FDE729E3C3C1B93D34CF2B /* VeeSearchResultsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F9C76A5FEBED7F2CBEB335899FF8271F /* VeeSearchResultsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC40C17D2E01DDDF48A7A8D50B8E92F8 /* OCMMacroState.h in Headers */ = {isa = PBXBuildFile; fileRef = F374FF9DA5C6AC23303512B64844FAFA /* OCMMacroState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC4F14C27B167A64F09A356652410909 /* OCMInvocationExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 762C3E177423896EB42682BCA97462D4 /* OCMInvocationExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CC5C84B30927F4CE48D7EC04BF652005 /* OCMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AB242F0285B9203C0E919758D217C /* OCMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CE1D11A21BB0D710B640F31B18935BF3 /* NSObject+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B2AAF17EA3FE21C21B4F9B350F7FC8E1 /* NSObject+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D470FD7FF206B100A7B79714E7FA0F4A /* OCMNotificationPoster.h in Headers */ = {isa = PBXBuildFile; fileRef = 46FD2C5D80E098F3F9F23220733A7E91 /* OCMNotificationPoster.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D78D41AA2CEB6ED571503108CEC3DA15 /* OCMArg.h in Headers */ = {isa = PBXBuildFile; fileRef = E1986D72F4F6978F14D46C2E068EFE49 /* OCMArg.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9EA9C8052853B8962318FFD5A5551B6 /* OCMExceptionReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D19DCABD8B7ADB238579CDEF6EAEE82 /* OCMExceptionReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DADACF239B30C047FA9304E5FDDA8B2E /* NSObject+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 932E7535BEA7E60AA1740F49026FE449 /* NSObject+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DD8A5ED7F3DC585CBF4C87C53A16E01F /* VeeContactCellConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 448AD6590604B09C0839B4E800248468 /* VeeContactCellConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD8B4C3131B13B8EB547C84ABF7E5E22 /* AGCProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 778F52FD88F6BD054010031044791121 /* AGCProperty.m */; };
-		DE57384C891A85506CB91EA186D2D2B4 /* OCMArgAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F743A2EA7492EA366F03058F585DA33 /* OCMArgAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DF0A3CB81B12C054F9C8258F680F7C9D /* OCPartialMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A14E187961DC53CD1770B98CC2D9C7 /* OCPartialMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E00ABE7FC44CB9D1B511D96D47C16AD5 /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D367A45C111EE093688C9B996F697 /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E1772B4066E7DE74C1CB3B34EAFC2409 /* FLKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B709FD108A20AD043AE77556DD1DE2 /* FLKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1AACE5746942815B420CC6AC774419D /* VeeContact.m in Sources */ = {isa = PBXBuildFile; fileRef = D251183B70E78EC168A1FD6A900AA847 /* VeeContact.m */; };
-		E2D2C2DEBBB651077ABC3710A423594F /* NSValue+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71014B0C3A026260B51B66423A2EF8E9 /* NSValue+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E45D617A6259C90DC54D6F22571998E8 /* OCMPassByRefSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = D5895AD224BFE8C3F924BD8F5BBE3F85 /* OCMPassByRefSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E4F4470AA472BB66CE57FCC90AEB5CEE /* VeeAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = D4FA8C3A4F16CC16CFDAD07991FD0673 /* VeeAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8CDCEDCDC0ADE51EBAFCC09F44EFF12 /* OCMBlockArgCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 90335CECC6C79FD618C544C7DB355EF6 /* OCMBlockArgCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		EA2A970253EA9B298F0BB63864AA18D1 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCF12D49770A752D7EC16CEBA28C78C /* OCProtocolMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		EB95D653419EF79BF843C2C70B173F30 /* UIView+FLKAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F2A9C6873214BB464B177EC873116D /* UIView+FLKAutoLayout.m */; };
-		ED42E372E25010DCF5243F5C90432E3A /* VeeContactPickerAppearanceConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 3286325C2FB3BA57E8F2B5AF90492DAF /* VeeContactPickerAppearanceConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEBEC3C68DD8C679511876B4610D582A /* OCMBoxedReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BB711400130F19DBA32DE43A7D229A /* OCMBoxedReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EF88C03906E66BAA9681572A1B61919B /* AGCProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = E9992465969B636C1EDE0DDA27EFCCAC /* AGCProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F035308FCC5EB70E1D23243CD8826EF1 /* VeeContactPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 913EEC3F5081F8194E9294D221830FD6 /* VeeContactPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0E9BE1709D8B3501A9E791E8D36FBED /* NSNotificationCenter+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3860DEC49856DA7885B328859D494434 /* NSNotificationCenter+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F11816ED4678B81EEF701D11B5725328 /* FLKAutoLayoutPredicateList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB15A2A90DF306B2391B7168E3CC52 /* FLKAutoLayoutPredicateList.m */; };
-		F2509B95DEA7AA63BC41F248842A561D /* UIView+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 706113361111287DE90CA0297874A6EB /* UIView+FLKAutoLayoutDebug.m */; };
-		F72635E34C618CD981ED55E4D16D5D5A /* AGCPropertyConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3FC2275230E21ADFA2152DAAA30056 /* AGCPropertyConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F805CADF164A54F3757760CC49A64BCE /* AGCPropertyDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F8AC8BF2846C936C26BB2B04865428 /* AGCPropertyDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F925890EF24AABC29FD00820D5EE1EAC /* NSLayoutConstraint+FLKAutoLayoutDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5F4EC6A32AD056A2453A01AD4206AC /* NSLayoutConstraint+FLKAutoLayoutDebug.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F9327FB6B7C9AD20FE153A3B0490284C /* NSObject+AGCDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1E9CFBEDD8DA5220F6EFBAC81FBF86 /* NSObject+AGCDescription.m */; };
-		FA87C656B6CA6FEF90326757FA37C455 /* VeePostalAddressProt.h in Headers */ = {isa = PBXBuildFile; fileRef = CB439535CDC10B1DE69D0B35DD43CA75 /* VeePostalAddressProt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB244D4F1BE42689BC4ABC52CF2A1334 /* AGCObjectInCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D80762D15B11AF7F773F3BF0B71D6FE /* AGCObjectInCollection.m */; };
-		FB294C8C8DCC4EACB074C58C027C9723 /* OCMIndirectReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A2449660A29AA9601D22268B8A58D3DA /* OCMIndirectReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FB7DD68F97F9B78C690E4B9986E1817B /* NSObject-AGCDescription-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2921EC61785B642CCC0D384261E045B6 /* NSObject-AGCDescription-dummy.m */; };
-		FD0B805E745CAB25577608034BBD94CB /* VeeABRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CFED56B796FAE5DF07988776822378EB /* VeeABRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDFD77CF38AE5FDD235A02217B763809 /* OCMBlockCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B95624A4EC391ACDFC7BA155D1339BD /* OCMBlockCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		02527DFB122F73BD3DC8C8A86222F3E2 /* OCMArg.h in Headers */ = {isa = PBXBuildFile; fileRef = E1986D72F4F6978F14D46C2E068EFE49 /* OCMArg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		047CC273F61073B8816A8826BD09C190 /* AGCObjectDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F79C21E60A12864BD35CCE34F163F7F /* AGCObjectDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		069B43798708E0E1F0D152771AD39862 /* AGCPropertyDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F8AC8BF2846C936C26BB2B04865428 /* AGCPropertyDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071C795CC71CDDD3C56FF4FB99BAB16A /* NSObject+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B2AAF17EA3FE21C21B4F9B350F7FC8E1 /* NSObject+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0896D88292344A5C130953694177CE26 /* UIView+FLKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 14623B0A17AC4214CC4C3C5364AE336F /* UIView+FLKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AC12F1B7957366C81558762D1111533 /* OCMReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 126EDE5D404D3A45E2202A44081C7EA7 /* OCMReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0DCC0E969360AF970A06D8BFE7894C2D /* VeeABRecordsImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D64373EC19BAEA74F74409AA17E0787 /* VeeABRecordsImporter.m */; };
+		0E1ED31837C555C996AAD4A41709AD75 /* NSNotificationCenter+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3860DEC49856DA7885B328859D494434 /* NSNotificationCenter+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		116046C059942DB2BED3E9303C6D271D /* VeePostalAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2B9FF47F393BFD3D00CA4C6D472686 /* VeePostalAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11E368BBEA5E95E84FC779095E7FBD98 /* VeeSearchResultsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F9C76A5FEBED7F2CBEB335899FF8271F /* VeeSearchResultsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13ABB94F3B14B5CE799048CE79D3659C /* VeeContactProtFactoryProducer.h in Headers */ = {isa = PBXBuildFile; fileRef = B4398768DB1E8C98E9EDA5CC5176BDC0 /* VeeContactProtFactoryProducer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		149390F8CA11530E0EA6548BFEA03DA0 /* AGCObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C89908061BAB4DDC40D6F2F4A1D02757 /* AGCObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1606473B0FD3E16D7A71A033177A695B /* VeeContactPickerOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BCB812A2AB3203A8992ED5AC188A7F1 /* VeeContactPickerOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1757FD19F0FA94EB224BFD1886E443E9 /* VeeContactPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB88223BAE4246622164357F6E351993 /* VeeContactPickerViewController.m */; };
+		1853C34BBA3FC142351D0A2B5A027A7B /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5474C4BB5D8A5ACCC787C839AB4AE /* OCClassMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1CD34D02EC9C728A6A039636D436F569 /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D367A45C111EE093688C9B996F697 /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2171DC64C6E7B3ABADFA6DD1B933442F /* AGCObjectDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD79B66E49C3E247EB7660451C6FCEE /* AGCObjectDescription.m */; };
+		264E7BAA8BB95FA9620602A44F1216B1 /* VeeContactPickerOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5904D5B2CAAFB1C27E5464E478B490 /* VeeContactPickerOptions.m */; };
+		2C29ABF82C3C7C0F5DE3AAA4C2975375 /* OCMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B40C0501F5C3E66B7A158F6AAFCD3 /* OCMLocation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FA52384A672B490406013A8CABDC52D /* FLKAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE828074361C2CD5777E412B50FCBC4A /* FLKAutoLayout-dummy.m */; };
+		35AEC8E8DA53D6BA2A8AE0DE7AC7F7AF /* UILabel+VeeBoldify.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFB9E4E397FF1D00E7C627646158A4 /* UILabel+VeeBoldify.m */; };
+		35D2A29D290001C524982E56F459717C /* AGCObjectInCollectionDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A964633C211071BB3843108ADD8A0D /* AGCObjectInCollectionDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		374D2E9282BFA417F3E81FE1F4D447C5 /* VeeTableViewSearchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF40A166ADD7C20CAA3045BD9174043 /* VeeTableViewSearchDelegate.m */; };
+		3980D54F3821E1D2BC2E2CFF97E3B3DB /* VeeTableViewSearchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE6758691CD3A8478B6B675674F2062 /* VeeTableViewSearchDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C282F482CB14200D161D2262EF37C27 /* OCMStubRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 076C4A6417ECC25A434877F6C7D8B112 /* OCMStubRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D159D347B9908C3BB57E42A8EB29871 /* OCMPassByRefSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = D5895AD224BFE8C3F924BD8F5BBE3F85 /* OCMPassByRefSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D299CAA41D55E4950FC06710D29AE4A /* OCMRealObjectForwarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B25B115B0CF5704BF0E03AD460EFD /* OCMRealObjectForwarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D3BD220D4345106D2A12623E23CC247 /* VeeABRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CACBD8F96EB952C36F94FDF6DFF4ECCC /* VeeABRecord.m */; };
+		3F62498C52C661CB1BB6C2177074D7C9 /* Pods-VeeContactPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA0C8AB969038AE895FB833FD239F9 /* Pods-VeeContactPicker_Tests-dummy.m */; };
+		4084A73274052B2B9CDAE7399CDB8FFA /* VeeSectionable.h in Headers */ = {isa = PBXBuildFile; fileRef = 37244244BEEC7A92D642AB8993F9D78B /* VeeSectionable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40BA2C54E635E70E3721EEF46153A898 /* NSObject+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 932E7535BEA7E60AA1740F49026FE449 /* NSObject+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		40BE9640ECD0F85906CF3491BFC0354A /* OCMInvocationExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 762C3E177423896EB42682BCA97462D4 /* OCMInvocationExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		40CD1ABC93AD28448B060A691F6C0A4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		40DF07E32702A313FA206543236D3930 /* VeeSectionedArrayDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C43448461CB6189112CB560FB090082 /* VeeSectionedArrayDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41B44EC9ADBC48D8ADD601284B6AE486 /* OCMRealObjectForwarder.m in Sources */ = {isa = PBXBuildFile; fileRef = A50AF4220644031707A33A41DA9640AD /* OCMRealObjectForwarder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42046743618B167BCEB6214E5CBDE6C1 /* OCMRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E71912A3E25AC91576E60454E3F80166 /* OCMRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42328452FB1F81C7C18A0C58FE575DF3 /* VeeABRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CFED56B796FAE5DF07988776822378EB /* VeeABRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436871D75DF9D85EA95D65702FB6CD3A /* VeeContactFactoryProt.h in Headers */ = {isa = PBXBuildFile; fileRef = 319626FF1240A796310E0AFF142EE7C0 /* VeeContactFactoryProt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4771255B022844AA5E6EC3B62D7D941D /* NSObject+AGCDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1E9CFBEDD8DA5220F6EFBAC81FBF86 /* NSObject+AGCDescription.m */; };
+		47C9BC6946EDCBD694A9A03989B6E751 /* NSObject+VeeCommons.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FD3750BD1AE44198E9DC7B600B1F3E /* NSObject+VeeCommons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4818FB97BADD67F4FE64CA621CFCA36E /* AGCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8A572396F55E496847B3044E6A611F /* AGCObject.m */; };
+		49D6EF5A9975390F38A3C9CAF7F7328F /* VeeContactPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3FCE01B80A14D7239210BD75B76853 /* VeeContactPickerViewController.xib */; };
+		4DCEC6FCB2DEA274669C8EE28FB56A37 /* AGCPropertyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA183AB9D6E4AC38C6DEFD8880D327 /* AGCPropertyDescription.m */; };
+		4F9769802EB314B30DEAB2981CE2C719 /* VeeContactProt.h in Headers */ = {isa = PBXBuildFile; fileRef = B92EF1482E004C6FE3EC3828EADB23CE /* VeeContactProt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		508F794E570155FA72BCEB6C832DF347 /* AGCObjectInCollectionDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 58866C8C25600DDBB086323020E5A443 /* AGCObjectInCollectionDescription.m */; };
+		51115C3910AAC6A8515B0EE4308C8AE9 /* VeeContact.h in Headers */ = {isa = PBXBuildFile; fileRef = E06F59538C6908D468FECC36790A0A12 /* VeeContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5204414823A953F9C1F84017390331FF /* AGCObjectInCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D80762D15B11AF7F773F3BF0B71D6FE /* AGCObjectInCollection.m */; };
+		53464AAD32E1DA4780BF51730BA03325 /* OCMBlockCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58FB89778628537624CC42F9038C4D /* OCMBlockCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		546648651CF99C9D510F604F8080C939 /* OCMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 820BDEC6AD8C2A2F9A119352D8298F93 /* OCMockObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5649F42543F309D40B3A502A20FE253D /* OCObserverMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D764D958929D2E08DD4D5C1613C89E /* OCObserverMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56C04592C585BB6283343A51605D6645 /* AGCProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 778F52FD88F6BD054010031044791121 /* AGCProperty.m */; };
+		5873A6BB4CF694C4952C113D8644DF45 /* VeeContact.m in Sources */ = {isa = PBXBuildFile; fileRef = D251183B70E78EC168A1FD6A900AA847 /* VeeContact.m */; };
+		5DDD30521A688DD230E86D4063DE9ACE /* NSValue+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 23E767939B9EDA4762E287ADE64A5E16 /* NSValue+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61F4391B92CFAC3471290BAFA2B91A09 /* VeeContactPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6DB6B7CA0EC4AD36F493A7F1CFDCD1 /* VeeContactPickerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6239AB839A4F9FE4953AA410600CFF3D /* OCMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = D40B0A3E41BA96035603D2B5124C353C /* OCMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		638348960752436C7F9D7F439C158560 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		66EA77EDFA816FAFCB0C9E679FDF50BA /* AGCDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D66E56D894AD0A54D1C136AAC64A97B /* AGCDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AF12723E56BB9D834C2B2D65F9BC759 /* VeeCommons.m in Sources */ = {isa = PBXBuildFile; fileRef = C12973F8466CFBB121438E55ED99775B /* VeeCommons.m */; };
+		6B4142EFDDCD6E2BBB050311AF98BEB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6C94BB1E29D9F3BD9406141FB8F23943 /* VeeContactPickerStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F8D9BE32F384D05D69472AE17AA2BE /* VeeContactPickerStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D254CF3A6B052BAF400881E8C63B4F2 /* VeeAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = D4FA8C3A4F16CC16CFDAD07991FD0673 /* VeeAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D425653C6BAF07E0833A104C2FECF11 /* OCMExceptionReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D19DCABD8B7ADB238579CDEF6EAEE82 /* OCMExceptionReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6D4A390DF0A72DC2BC9BB5BFB21CF5B2 /* VeePostalAddressProt.h in Headers */ = {isa = PBXBuildFile; fileRef = CB439535CDC10B1DE69D0B35DD43CA75 /* VeePostalAddressProt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E4AFD765167C7DDF7B468562231549C /* AGCPropertyConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3FC2275230E21ADFA2152DAAA30056 /* AGCPropertyConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70FAC92FDAAE513F24652488C08C5288 /* UIImageView+AGCInitials.h in Headers */ = {isa = PBXBuildFile; fileRef = AF103C80C738F799C250ACEAC2E25066 /* UIImageView+AGCInitials.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72D8278FA1F1C5DCECA1C298850A9C22 /* VeePostalAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 368F1522BC99C2F7766A8611FF3F6171 /* VeePostalAddress.m */; };
+		731BD07D0CBB8BA075C4114D932DE2CA /* VeeContactFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BD577A1830158B0AE190BE987971 /* VeeContactFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74F11251752068A4669362418849D8BB /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB6C93CB5902F6A08B8450397A326F8 /* OCMConstraint.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		767E6A941E740E2C33B4BA722A3DDA04 /* OCMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6930CABAF9B7D693E5C79ED03EA45D /* OCMock-dummy.m */; };
+		79D3C64ED8458DE006E79C21560B347F /* VeeCommons.h in Headers */ = {isa = PBXBuildFile; fileRef = A5338BF88D4C38A17EBC0F1D76CF7F79 /* VeeCommons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79DF9CFB844A065CD77BAF14980BDBC2 /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4303F45EAF0909926CC296CFC7061481 /* OCMLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AF70638D3F5705B49D50A24132B23AD /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCF12D49770A752D7EC16CEBA28C78C /* OCProtocolMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7F1CC58F62C05C0992B70F5427312F33 /* NSObject-AGCDescription-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2921EC61785B642CCC0D384261E045B6 /* NSObject-AGCDescription-dummy.m */; };
+		7FE09AFD4D8C24FBFDD71C17F3912D5F /* FLKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B709FD108A20AD043AE77556DD1DE2 /* FLKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80ABAC2D65FECC490B1E081D757362F9 /* FLKAutoLayoutPredicateList.h in Headers */ = {isa = PBXBuildFile; fileRef = C748C6E66F6F677234E9BBF9A1FAC35E /* FLKAutoLayoutPredicateList.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		828BADC5729BF1287CCD1114F2B5A0B4 /* OCObserverMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 529058C92ADB00DD2D932CA4866155A3 /* OCObserverMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8376E391D1DA98F25B7A66D4568CC8DC /* OCProtocolMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F0CD3DFC21AD864884B33E9D81101259 /* OCProtocolMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		847B73D1541BF56F80D8DD3129CC6072 /* VeeContactPickerAppearanceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CD30E3063BEA6F5DCB2BCE235DA7AE09 /* VeeContactPickerAppearanceConstants.m */; };
+		853917160E5CF29D9938115E53547221 /* VeeContactCellConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 448AD6590604B09C0839B4E800248468 /* VeeContactCellConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		868EDDCF8D50052A1262B33D8DA9A0BA /* OCMFunctionsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9F19A83433D69294262A691AABA3FC /* OCMFunctionsPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C0953C1AC4AB2190448FF3A55C62E0D /* OCMArgAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F743A2EA7492EA366F03058F585DA33 /* OCMArgAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F763FBC363ED17679A12EABA64F3DF9 /* UIImageView+AGCInitials.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C301ACCCF380D1DC36F12613DA82D9 /* UIImageView+AGCInitials.m */; };
+		920A24D9C37F9FBF4A76EAECC69E2C75 /* OCMBlockArgCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 90335CECC6C79FD618C544C7DB355EF6 /* OCMBlockArgCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		923704226B4C678EA368F13F722AFEF0 /* AGCPropertyProt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0897E1C06B7B401A8788CE5129F206A8 /* AGCPropertyProt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9267EF5D2228875A587C2BB5F058BD7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		92D2214BBA44CA953EF23AC29220B2F2 /* UIView+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 706113361111287DE90CA0297874A6EB /* UIView+FLKAutoLayoutDebug.m */; };
+		92FBEE8C51752177DAC5DE11742716FB /* AGCInitialsColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 6432C154496824119F57FBA34FDD1F27 /* AGCInitialsColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		939F28B70AF3325A78E11C5C765865A0 /* OCMReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A2557835640C27067E65FD0383B7260D /* OCMReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		956CE3390F64F2DA9CACB228AA7C3C78 /* UIImageView-AGCInitials-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4808934F315883BE7B5856D6146E2 /* UIImageView-AGCInitials-dummy.m */; };
+		972A4220F1E6DCFDB7A133F086550C08 /* OCMInvocationExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = E7BAF40D179955B6819A9864B89CC03D /* OCMInvocationExpectation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9A74DA82A9D3063746279C945A504066 /* OCMExceptionReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF6C78322378BFFCC5ECE99835D0AA5 /* OCMExceptionReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9AA180AC9D8DF08064A18149F30D0D30 /* OCMInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7363EB666A06F898301382F18132761D /* OCMInvocationMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D6926B60DD04448C4BDDD147AEFC492 /* OCMInvocationStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 9566542921C9B7A70852CD6A75959877 /* OCMInvocationStub.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9D8616E885D09ADC6D1D5AD0FDF4CD79 /* UIView+FLKAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F2A9C6873214BB464B177EC873116D /* UIView+FLKAutoLayout.m */; };
+		9D89E183475F54476B036A1608D97AC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A0DB39CD57153C593DB4C43DCD04C70D /* FLKAutoLayoutPredicateList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB15A2A90DF306B2391B7168E3CC52 /* FLKAutoLayoutPredicateList.m */; };
+		A29980296DEF5D751452296DBD3AC224 /* AGCPropertiesExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD030DA0662F29CFE744FF30835083E /* AGCPropertiesExtractor.m */; };
+		A5564F803BC0B3803FF3676F98B12432 /* VeeContactUITableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B32C3EC1FD9EEC9485CD59EDBA7C212 /* VeeContactUITableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A64BCD7DECCE4C79E1693C6733E4C71E /* OCMArgAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1930C2D253A4A48E1624AF704D15BD5C /* OCMArgAction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6716718F0720573DD09B43478440C62 /* OCMConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D124E37AFFB572BADA60F56E05E9DE /* OCMConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A85451C7145D0A6646CB4CA861B45500 /* AGCInitialsColors.m in Sources */ = {isa = PBXBuildFile; fileRef = D3936D1A4B1B67B7F9B76253640B73F4 /* AGCInitialsColors.m */; };
+		A856625DFB175B93855A35FEC919647F /* VeeContactPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8445A0B515FC3DA111E4F3993BDD2073 /* VeeContactPicker-dummy.m */; };
+		A94709AAB7DE8B156DCA1F3D5EE54889 /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC471859A5B0E289481324ECF6F7F5EC /* NSLayoutConstraint+FLKAutoLayoutDebug.m */; };
+		A9977839333E5E89DE6F3A485747D32F /* VeeContactFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E39AD68129286F237B96CDAAF0751DD1 /* VeeContactFactory.m */; };
+		AA9AA7A3EAEF09E92599670C1885504A /* OCMBlockCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B95624A4EC391ACDFC7BA155D1339BD /* OCMBlockCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE761809A4E4FE6602A794A839C2AE0B /* OCMExpectationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 15929268E68AA99F8BFB5FDA16C6B77B /* OCMExpectationRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B0D5C1863703CA2FE4EF646114FD49D8 /* VeeABDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D865B20D6A414B5008B47FD35BF450E4 /* VeeABDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1AC1794DFE45C57D210A79052838297 /* OCClassMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4DF127AA0CB4594883DABE30EFA8A9 /* OCClassMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B1C7C41369C4FDED19ED391EFABF908E /* OCMBoxedReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB710BF2ED5437A0857FE3D1FF237F8 /* OCMBoxedReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6462885514D2F90665D9DC354A0296E /* OCMVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 898CD33A1775942785B2C1C7FAE26CC9 /* OCMVerifier.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B805C5FF5FD8D7890DD5F8F2644E0481 /* OCMFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F48CC9EA168978D41208F7D10ED9A /* OCMFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BA23D8368270C1A5F7F9CEE8487DC222 /* VeeABRecordsImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3346084A00A520CF0DE7F8803E99A2D4 /* VeeABRecordsImporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAB1064596A60C4276F829E999F8DA09 /* NSNotificationCenter+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A89685C375AF27C03840B6341F4BC73 /* NSNotificationCenter+OCMAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAC0BDE87C9152E6C109755515C1D26F /* OCMIndirectReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A2449660A29AA9601D22268B8A58D3DA /* OCMIndirectReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC601DE9DC899B96B11B67DF9260AEFB /* NSObject+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077D0C1C21BFA883F2C47DD58B5589B /* NSObject+FLKAutoLayoutDebug.m */; };
+		BD01321120D48F00AACDBEC6D240B154 /* NSObject+VeeCommons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F783B5A3F046A16C857042698C3C4B7 /* NSObject+VeeCommons.m */; };
+		BF6FB2993CB14EF6BAFB17E6297BC728 /* OCMMacroState.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB41A583EFDAC3D2432281134B5F0E1 /* OCMMacroState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C04265F30406E38C2DAF56ABE1874122 /* VeeContactProtFactoryProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EE84FFABB3A0ED51F5E83034D9BF8E /* VeeContactProtFactoryProducer.m */; };
+		C232A1D91ECB1AF800831A96 /* ContactPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C232A1D71ECB1AF800831A96 /* ContactPickerCell.h */; };
+		C232A1DA1ECB1AF800831A96 /* ContactPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C232A1D81ECB1AF800831A96 /* ContactPickerCell.m */; };
+		C4945BF00E7C57BB73562DD5BC37D898 /* NSInvocation+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 319E78A476C8FC42AAB9D5289635B079 /* NSInvocation+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4E611BA5BA3E0032D4FA80542FF2033 /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DA567F5946CD672B2B0B84D7482660 /* OCMArg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C630E85370139542CBFC48EC76016159 /* UIView+FLKAutoLayoutDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2043CA841B584AFDFB5F583C3A517F /* UIView+FLKAutoLayoutDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C809539AF9C9DE94EA0371408B07D1A9 /* AGCPropertiesExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = D977E64328A2F1A52462990B9C0DC5A3 /* AGCPropertiesExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C882DDBD43324634C0F9DB53AFBF1D47 /* VeeContactPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 913EEC3F5081F8194E9294D221830FD6 /* VeeContactPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C899394A935194AE55C6E574A5069DBF /* AGCProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = E9992465969B636C1EDE0DDA27EFCCAC /* AGCProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB4A0138FBBDB6FAA80F4F6ABB35EECD /* OCMNotificationPoster.h in Headers */ = {isa = PBXBuildFile; fileRef = 46FD2C5D80E098F3F9F23220733A7E91 /* OCMNotificationPoster.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CCD934E43FDF3103A6D61D5288D68B63 /* NSObject+AGCDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 47AC563C1926E436FA9501CE16574141 /* NSObject+AGCDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD09AB272C437827BDF24AD1A4E50F61 /* OCPartialMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A14E187961DC53CD1770B98CC2D9C7 /* OCPartialMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF01D468B955B1B9169A3D1449FD51AE /* OCMFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = BE377E085572154EE2EE633D9ABB5383 /* OCMFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0983D6D59B802B2E00F77BEA5D241C4 /* NSMethodSignature+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFF23ACAC33D4FD985B70619F85EB66 /* NSMethodSignature+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D1814014B42FFD24504C6CDCA48CE234 /* OCMMacroState.h in Headers */ = {isa = PBXBuildFile; fileRef = F374FF9DA5C6AC23303512B64844FAFA /* OCMMacroState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3FA5083C8A87EC5918ED53F18405F32 /* NSValue+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71014B0C3A026260B51B66423A2EF8E9 /* NSValue+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D4946EC05F4B1948842BB7A8CD50F113 /* OCMStubRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B4A2A2EADF7A4343619C4091215AAF /* OCMStubRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D5784877351F93E1899F43F4E0A554FE /* VeeAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C181BA174C3C70026EB3449099634 /* VeeAddressBook.m */; };
+		D754D52C9C0FC5FDA9D79E359A5CEB63 /* NSMethodSignature+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF5B4872CEFA7A527B6931C8F885BB1 /* NSMethodSignature+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D7C7F2B2CE707D7737F5E44AD6825390 /* NSObject+FLKAutoLayoutDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 86706F890CD5DD9A793961697D6FC461 /* NSObject+FLKAutoLayoutDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D81ED1EE2AF9DACC874E4BDBE8C40F54 /* VeeSectionedArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E64A9A991B4C12690F6C9641BC77A /* VeeSectionedArrayDataSource.m */; };
+		D87328037AC62BC698D991279FD5F164 /* OCMBlockArgCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A5B0856F4A4E98812FA520F40AC97F /* OCMBlockArgCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DB48261589D027DD4B14F7F3FAA7F99F /* OCMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E06C06259A15D1CE198BC7D6B571014 /* OCMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCEF6B671258CAEE8CF3DD449D49283D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DDB838F57DB6DC25B7DBF63B39C46783 /* OCPartialMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EFF312410F5E9D1D87D974F1DFD2151 /* OCPartialMockObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE87E010E15A6A17E2C9CD84DA14A0BA /* AGCDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF17CC39A8C073FBBEEF36B3297E97D /* AGCDescription.m */; };
+		E08855B2702716949A7D625872785512 /* UIView+FLKAutoLayoutPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = D73714CCAE1E8328100523B32B5B6B95 /* UIView+FLKAutoLayoutPredicate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E137E0262BC44A50507D01044AEE807B /* OCMObserverRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = C900D4272736D6FC063816B4F897F2AD /* OCMObserverRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E25D9D792301A8ECEF6BE901D347F03D /* AGCObjectInCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F9F4D833BDE0AB0BAAFDA6CE6784ADD /* AGCObjectInCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5FCB2D5446EEFD8031B1A3879203167 /* NSLayoutConstraint+FLKAutoLayoutDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5F4EC6A32AD056A2453A01AD4206AC /* NSLayoutConstraint+FLKAutoLayoutDebug.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6CE7E482261CFBDB354443EFA78D35C /* OCMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AB242F0285B9203C0E919758D217C /* OCMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E8612AABCE826260F2D834D5061AC591 /* OCMNotificationPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D7CBDDE4407A20A720533F54A7BEDC /* OCMNotificationPoster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E87EF9E9DC42BB0954F48C289490C51E /* Pods-VeeContactPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817F5E07DC7EA0EA2BCA0E4CBD5C18A /* Pods-VeeContactPicker_Example-dummy.m */; };
+		EA45C0DCEA291C3CABCB98F22B602523 /* VeeContactCellConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F26B372F371525E7B9B9BF68197A1B1 /* VeeContactCellConfiguration.m */; };
+		EA9A79135185FA9B8D8E0460B13083A0 /* OCMPassByRefSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6587402262810F604E2B2B1733EF41 /* OCMPassByRefSetter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB4B1625D1E47DF014B0E419B70DDACA /* UIView+FLKAutoLayoutPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663961CD87063C2C34F84520AE5B962 /* UIView+FLKAutoLayoutPredicate.m */; };
+		EE71CDA2DB81F3D3323C17724E3FFD27 /* VeeContactPickerStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = DB155CA9303BA48DE02FFB030A9022A5 /* VeeContactPickerStrings.m */; };
+		F06964CDCB59D5662D93009DF6003846 /* AGCPropertyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 297931920CA7512F6606A22AFC9B87E4 /* AGCPropertyConstants.m */; };
+		F07F2599B2BC2FE74E16C8A3C9B9BC53 /* UIViewController+FLKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 737E7E7721BD959346A98B184C2C2B05 /* UIViewController+FLKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1052C24FFA4FE6F5CFAF647177E8C20 /* UILabel+VeeBoldify.h in Headers */ = {isa = PBXBuildFile; fileRef = 63109F29F517BE16E789DE8795C323D1 /* UILabel+VeeBoldify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F261D98AE9E878D134AA810D28E6B84D /* OCMVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 02056F54349B198AA0CC5CE08B96AE59 /* OCMVerifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6868C1EF660C6C028D92E6E0C497D92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F76C42A3EEA7F274B51B593374D9E6A1 /* OCMIndirectReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C007ADD444B580ADB3C95728E99D3B49 /* OCMIndirectReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F77DFA9A51A4F147887D4D5F65A2C37A /* OCMInvocationStub.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1C99E5AD7ED56A70844B492C1679F /* OCMInvocationStub.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F7FCFD7F34645ED9E8886376A898C234 /* OCMBoxedReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BB711400130F19DBA32DE43A7D229A /* OCMBoxedReturnValueProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F9181CD269B33C9EDD91B8FB3A54C168 /* OCMObserverRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B76F7AFB31C4D10BE668F69F9CA7AE /* OCMObserverRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FCC7872E4A0286DF5A01DE195F59B67B /* OCMExpectationRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C600EC0D79AAC57119C32733E16476 /* OCMExpectationRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FCEB3964FE34FF08B22C795DB6EFA25B /* OCMInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE070E716F78B296955E66FE2EFEAA3 /* OCMInvocationMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FD36AE3BD74A195A745B415AB19543BC /* VeeContactPickerAppearanceConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 3286325C2FB3BA57E8F2B5AF90492DAF /* VeeContactPickerAppearanceConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1EB725993725F576B79AEC04D10F97 /* UIViewController+FLKAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BFDFB75C6CA655875C835951EFD195 /* UIViewController+FLKAutoLayout.m */; };
+		FF871DA859FA191E3FA1ADDEB6EA9737 /* VeeContactUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA771448C077757494B3484ADCB233 /* VeeContactUITableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2B96C2805E1757D056ECB719830CF128 /* PBXContainerItemProxy */ = {
+		046B2D51A1BEE90D4F48492581A29476 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A2CAA839F2722C796C6F1DFDC806B92;
+			remoteGlobalIDString = A8A3AE78B68DA3AB853AE8B1CB0FCD0E;
+			remoteInfo = FLKAutoLayout;
+		};
+		1101B477052F8041E92A981F7F61EE97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A561198B7669F579C29FC6864AE4991F;
 			remoteInfo = OCMock;
 		};
-		2CDC55A95E149BEDE21CBD6FF1A521FB /* PBXContainerItemProxy */ = {
+		518F0722B63BD2061E79C9E6D5EDD48D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 933CD5E524900E19D0DDD238A4A2247C;
-			remoteInfo = VeeContactPicker;
-		};
-		6E4CA542F7F7B760F9F9CF55A61A2C22 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6847C6CB33DBF8940D3CDE909D94E97A;
+			remoteGlobalIDString = A8A3AE78B68DA3AB853AE8B1CB0FCD0E;
 			remoteInfo = FLKAutoLayout;
 		};
-		90BA88C7C69DA58371E2643DDA0118CD /* PBXContainerItemProxy */ = {
+		6D2A24F728F4D1CC3A7E4D59E83C0CE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B8739893A42D32E4A913F5DAD50E7A9D;
-			remoteInfo = "UIImageView-AGCInitials";
-		};
-		9B3F5B3966338DE46223AD3777C9798D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 933CD5E524900E19D0DDD238A4A2247C;
-			remoteInfo = VeeContactPicker;
-		};
-		B28228D9CC2378FE3892591D016E1987 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6847C6CB33DBF8940D3CDE909D94E97A;
-			remoteInfo = FLKAutoLayout;
-		};
-		D3CFD010885466DBD92F6496968BA777 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8C62A3D59CBE3664668919A00BC68FDB;
-			remoteInfo = "NSObject-AGCDescription";
-		};
-		D8FE7DD14DB2FA0FE8A6B3BF250D4F56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD9C8BD84E13A4A550EBD92C5C7409AF;
+			remoteGlobalIDString = EC91BC7D6D1F9DE76203FDF1AD33D1DA;
 			remoteInfo = "VeeContactPicker-VeeContactPicker";
 		};
-		E81DC0648F36921194A65A1A3D06DDC7 /* PBXContainerItemProxy */ = {
+		705A80F42F6469F6658821669BE8868B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B8739893A42D32E4A913F5DAD50E7A9D;
+			remoteGlobalIDString = 4D9F1DD436DA9B331498AA12F501CCA3;
 			remoteInfo = "UIImageView-AGCInitials";
 		};
-		EAA028FA34FD3A02E8F0F297E8C7E522 /* PBXContainerItemProxy */ = {
+		84A6D8C811DAC78B41EACF0BA875B028 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8C62A3D59CBE3664668919A00BC68FDB;
-			remoteInfo = "NSObject-AGCDescription";
+			remoteGlobalIDString = CE28745BB57D4A357C3516F3F417855F;
+			remoteInfo = VeeContactPicker;
 		};
-		F36077E8AB2CD4D4D1A15B2A9FB27EF0 /* PBXContainerItemProxy */ = {
+		870A8C3FE5B4B44080BD05FE93F12B47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6847C6CB33DBF8940D3CDE909D94E97A;
+			remoteGlobalIDString = A8A3AE78B68DA3AB853AE8B1CB0FCD0E;
 			remoteInfo = FLKAutoLayout;
 		};
-		F83522923B55C8E5F58E26EDE016E2F1 /* PBXContainerItemProxy */ = {
+		A5713285235DCE38E42427CC71DE91D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8C62A3D59CBE3664668919A00BC68FDB;
+			remoteGlobalIDString = A8401A8D55E3408E81393379C98129D9;
 			remoteInfo = "NSObject-AGCDescription";
 		};
-		FEB7773006E5F2B2F19A152736DE40C5 /* PBXContainerItemProxy */ = {
+		B7F5705DA7BC8E40B9FC71A34DD241FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B8739893A42D32E4A913F5DAD50E7A9D;
+			remoteGlobalIDString = CE28745BB57D4A357C3516F3F417855F;
+			remoteInfo = VeeContactPicker;
+		};
+		E973FE6741A579EBE2716F342B482EB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8401A8D55E3408E81393379C98129D9;
+			remoteInfo = "NSObject-AGCDescription";
+		};
+		F26B9B46FA922FE0201A44A9E606A058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D9F1DD436DA9B331498AA12F501CCA3;
 			remoteInfo = "UIImageView-AGCInitials";
+		};
+		FA40F6BF6FC775418DB5E5BED63B37F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D9F1DD436DA9B331498AA12F501CCA3;
+			remoteInfo = "UIImageView-AGCInitials";
+		};
+		FEA0B9FCEDFBFB96EA456E1614D5CBEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8401A8D55E3408E81393379C98129D9;
+			remoteInfo = "NSObject-AGCDescription";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -404,15 +406,17 @@
 		BFAA0C8AB969038AE895FB833FD239F9 /* Pods-VeeContactPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeeContactPicker_Tests-dummy.m"; sourceTree = "<group>"; };
 		C007ADD444B580ADB3C95728E99D3B49 /* OCMIndirectReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMIndirectReturnValueProvider.m; path = Source/OCMock/OCMIndirectReturnValueProvider.m; sourceTree = "<group>"; };
 		C12973F8466CFBB121438E55ED99775B /* VeeCommons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VeeCommons.m; sourceTree = "<group>"; };
+		C232A1D71ECB1AF800831A96 /* ContactPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactPickerCell.h; sourceTree = "<group>"; };
+		C232A1D81ECB1AF800831A96 /* ContactPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactPickerCell.m; sourceTree = "<group>"; };
 		C748C6E66F6F677234E9BBF9A1FAC35E /* FLKAutoLayoutPredicateList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLKAutoLayoutPredicateList.h; path = FLKAutoLayout/Private/FLKAutoLayoutPredicateList.h; sourceTree = "<group>"; };
 		C89908061BAB4DDC40D6F2F4A1D02757 /* AGCObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AGCObject.h; path = "NSObject-AGCDescription/Classes/AGCObject.h"; sourceTree = "<group>"; };
 		C900D4272736D6FC063816B4F897F2AD /* OCMObserverRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMObserverRecorder.m; path = Source/OCMock/OCMObserverRecorder.m; sourceTree = "<group>"; };
 		C992C92B34F287A560782701B6936176 /* libPods-VeeContactPicker_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VeeContactPicker_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACBD8F96EB952C36F94FDF6DFF4ECCC /* VeeABRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VeeABRecord.m; sourceTree = "<group>"; };
 		CB439535CDC10B1DE69D0B35DD43CA75 /* VeePostalAddressProt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VeePostalAddressProt.h; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBB41A583EFDAC3D2432281134B5F0E1 /* OCMMacroState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMMacroState.m; path = Source/OCMock/OCMMacroState.m; sourceTree = "<group>"; };
 		CD30E3063BEA6F5DCB2BCE235DA7AE09 /* VeeContactPickerAppearanceConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VeeContactPickerAppearanceConstants.m; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CF58FB89778628537624CC42F9038C4D /* OCMBlockCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockCaller.m; path = Source/OCMock/OCMBlockCaller.m; sourceTree = "<group>"; };
 		CFED56B796FAE5DF07988776822378EB /* VeeABRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VeeABRecord.h; sourceTree = "<group>"; };
 		D251183B70E78EC168A1FD6A900AA847 /* VeeContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VeeContact.m; sourceTree = "<group>"; };
@@ -465,66 +469,66 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E1584CC3B38524000807DCCE032F503 /* Frameworks */ = {
+		05D1466AEF20707CCC506E701C0D6C46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94DE8D9DF0754A38F0B142B0AFA99095 /* Foundation.framework in Frameworks */,
+				6B4142EFDDCD6E2BBB050311AF98BEB6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32E6E9433F95C4E7E8FC48E2B4CB2572 /* Frameworks */ = {
+		34DCF036B20D8A3D311B7158F03CE57B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54756B2926CF0AB9333A743FBF6E7FAB /* Foundation.framework in Frameworks */,
+				F6868C1EF660C6C028D92E6E0C497D92 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C2602132A1D207DB135342BF83AB581 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1A99F49DAF9B0C1D4B9C09B77A35DEC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C22463849E947A7647C86725189B1BA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D53D3C353E4F054A1E358E10F896E75 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		960299D0307E48086D9959656EE660C8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6AEE310AE72BE52F3AA7F06EAA18D19E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A43268E2CCE829DA583D36B59BDBC3A8 /* Frameworks */ = {
+		4500E04F6FB00972A6CD20580C4651E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B552E65283DAD2E02A86AD247DE4AEC7 /* Frameworks */ = {
+		5581F3FF20B510C68285CCB695887775 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4076D8704756B0D751A780A580D26E27 /* Foundation.framework in Frameworks */,
+				40CD1ABC93AD28448B060A691F6C0A4B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C25CDF71753480A844B3EBD054BAB4F3 /* Frameworks */ = {
+		6C1B7A8C0F2C08D51FCA68E587FDA800 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9081CF86AC00822660ECD10A6C5F5746 /* Foundation.framework in Frameworks */,
+				638348960752436C7F9D7F439C158560 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C68191FA6CFD8ECD1318DE33CA7970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D89E183475F54476B036A1608D97AC6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DF57E93702F9036FEE931B449D6D803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEF6B671258CAEE8CF3DD449D49283D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831F1262C1753E0853FE3261B36D880E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9267EF5D2228875A587C2BB5F058BD7C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +561,8 @@
 		17E956114830981816C5571E20D3A472 /* UITableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				C232A1D71ECB1AF800831A96 /* ContactPickerCell.h */,
+				C232A1D81ECB1AF800831A96 /* ContactPickerCell.m */,
 				448AD6590604B09C0839B4E800248468 /* VeeContactCellConfiguration.h */,
 				9F26B372F371525E7B9B9BF68197A1B1 /* VeeContactCellConfiguration.m */,
 				0B32C3EC1FD9EEC9485CD59EDBA7C212 /* VeeContactUITableViewCell.h */,
@@ -635,14 +641,6 @@
 			path = "../Target Support Files/FLKAutoLayout";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		4986219C3859E086EC74A9A4FC0ADC86 /* VeeContact Abstract Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -707,6 +705,14 @@
 				4FA7216863D5ACC7879E93053C8A9849 /* Pods-VeeContactPicker_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		784E391AAB1E52FD819161406F881C4E /* VeeContactPicker */ = {
@@ -918,7 +924,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -996,241 +1002,133 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5AFF86D43561748E7227622A6EDDA92B /* Headers */ = {
+		350A2596276F44B63BBB1FAFAA4646AB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149DE9C6DB74B12EFF07D185484D946F /* NSInvocation+OCMAdditions.h in Headers */,
-				0934D3DAC27331C1569A357A677B2206 /* NSMethodSignature+OCMAdditions.h in Headers */,
-				7FFCEEC0036EC9E7A5D3BAD719B28D4A /* NSNotificationCenter+OCMAdditions.h in Headers */,
-				CE1D11A21BB0D710B640F31B18935BF3 /* NSObject+OCMAdditions.h in Headers */,
-				A425B4C6EAA79B2C9BB4F374180DC194 /* NSValue+OCMAdditions.h in Headers */,
-				94216C983E91F2BA503920465DE1972A /* OCClassMockObject.h in Headers */,
-				D78D41AA2CEB6ED571503108CEC3DA15 /* OCMArg.h in Headers */,
-				DE57384C891A85506CB91EA186D2D2B4 /* OCMArgAction.h in Headers */,
-				71899DFD8094C412FFC39669279B4533 /* OCMBlockArgCaller.h in Headers */,
-				FDFD77CF38AE5FDD235A02217B763809 /* OCMBlockCaller.h in Headers */,
-				EEBEC3C68DD8C679511876B4610D582A /* OCMBoxedReturnValueProvider.h in Headers */,
-				3152811CD17686AA726713BFE3612206 /* OCMConstraint.h in Headers */,
-				5F04262019BBB326960E643861626099 /* OCMExceptionReturnValueProvider.h in Headers */,
-				C01520F21314A4A11E0BD5C9BE190A1A /* OCMExpectationRecorder.h in Headers */,
-				0EE98780873CB1A29EE8B4A36BA7E14A /* OCMFunctions.h in Headers */,
-				3A769EE15211B7EBBAF4B1C8AD542502 /* OCMFunctionsPrivate.h in Headers */,
-				FB294C8C8DCC4EACB074C58C027C9723 /* OCMIndirectReturnValueProvider.h in Headers */,
-				BC7143B82E45DDE808B1D8E8F6970E41 /* OCMInvocationExpectation.h in Headers */,
-				70AC31D0736F568C0386716176361D09 /* OCMInvocationMatcher.h in Headers */,
-				AD672A92EF1A71CB35F77D51924A63D7 /* OCMInvocationStub.h in Headers */,
-				C796F27878B148315E4EB60535EEA4BE /* OCMLocation.h in Headers */,
-				CC40C17D2E01DDDF48A7A8D50B8E92F8 /* OCMMacroState.h in Headers */,
-				D470FD7FF206B100A7B79714E7FA0F4A /* OCMNotificationPoster.h in Headers */,
-				87AA263FA688A8E92C2B8ADEE72C98C6 /* OCMObserverRecorder.h in Headers */,
-				10AEAD2136880EEE7E771F533331F250 /* OCMock.h in Headers */,
-				8A1370FF0DD475F945954535A988ED4B /* OCMockObject.h in Headers */,
-				E45D617A6259C90DC54D6F22571998E8 /* OCMPassByRefSetter.h in Headers */,
-				8D40AF80800C0D4A691F4A0656E53D98 /* OCMRealObjectForwarder.h in Headers */,
-				9C195CB2280DCD3183057794B4504B22 /* OCMRecorder.h in Headers */,
-				C4235F3704F471BAF74CB4482A99D340 /* OCMReturnValueProvider.h in Headers */,
-				950C209E1D004EBDCD43D6C2136B5AA2 /* OCMStubRecorder.h in Headers */,
-				33C4E9CA4B43CD4C468B338E2ED06860 /* OCMVerifier.h in Headers */,
-				C6DEDAD5B01946A2644F428020F881B6 /* OCObserverMockObject.h in Headers */,
-				562C4A7A171B6F0000B132E22372C3DA /* OCPartialMockObject.h in Headers */,
-				40B2ABF25812A14D83A05D8937FBDB7B /* OCProtocolMockObject.h in Headers */,
+				47C9BC6946EDCBD694A9A03989B6E751 /* NSObject+VeeCommons.h in Headers */,
+				F1052C24FFA4FE6F5CFAF647177E8C20 /* UILabel+VeeBoldify.h in Headers */,
+				B0D5C1863703CA2FE4EF646114FD49D8 /* VeeABDelegate.h in Headers */,
+				42328452FB1F81C7C18A0C58FE575DF3 /* VeeABRecord.h in Headers */,
+				BA23D8368270C1A5F7F9CEE8487DC222 /* VeeABRecordsImporter.h in Headers */,
+				6D254CF3A6B052BAF400881E8C63B4F2 /* VeeAddressBook.h in Headers */,
+				79D3C64ED8458DE006E79C21560B347F /* VeeCommons.h in Headers */,
+				51115C3910AAC6A8515B0EE4308C8AE9 /* VeeContact.h in Headers */,
+				853917160E5CF29D9938115E53547221 /* VeeContactCellConfiguration.h in Headers */,
+				C232A1D91ECB1AF800831A96 /* ContactPickerCell.h in Headers */,
+				731BD07D0CBB8BA075C4114D932DE2CA /* VeeContactFactory.h in Headers */,
+				436871D75DF9D85EA95D65702FB6CD3A /* VeeContactFactoryProt.h in Headers */,
+				FD36AE3BD74A195A745B415AB19543BC /* VeeContactPickerAppearanceConstants.h in Headers */,
+				61F4391B92CFAC3471290BAFA2B91A09 /* VeeContactPickerDelegate.h in Headers */,
+				1606473B0FD3E16D7A71A033177A695B /* VeeContactPickerOptions.h in Headers */,
+				6C94BB1E29D9F3BD9406141FB8F23943 /* VeeContactPickerStrings.h in Headers */,
+				C882DDBD43324634C0F9DB53AFBF1D47 /* VeeContactPickerViewController.h in Headers */,
+				4F9769802EB314B30DEAB2981CE2C719 /* VeeContactProt.h in Headers */,
+				13ABB94F3B14B5CE799048CE79D3659C /* VeeContactProtFactoryProducer.h in Headers */,
+				A5564F803BC0B3803FF3676F98B12432 /* VeeContactUITableViewCell.h in Headers */,
+				116046C059942DB2BED3E9303C6D271D /* VeePostalAddress.h in Headers */,
+				6D4A390DF0A72DC2BC9BB5BFB21CF5B2 /* VeePostalAddressProt.h in Headers */,
+				11E368BBEA5E95E84FC779095E7FBD98 /* VeeSearchResultsDelegate.h in Headers */,
+				4084A73274052B2B9CDAE7399CDB8FFA /* VeeSectionable.h in Headers */,
+				40DF07E32702A313FA206543236D3930 /* VeeSectionedArrayDataSource.h in Headers */,
+				3980D54F3821E1D2BC2E2CFF97E3B3DB /* VeeTableViewSearchDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94EFEDAA6DAB4496973C4591F9C949CF /* Headers */ = {
+		473B121A40DD103D01C00970E0AB4C3B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C75CD8215C7901D7ADFC352979D969 /* AGCInitialsColors.h in Headers */,
-				2D3E0C6F00D37B363ABA3BB855E3D0F8 /* UIImageView+AGCInitials.h in Headers */,
+				7FE09AFD4D8C24FBFDD71C17F3912D5F /* FLKAutoLayout.h in Headers */,
+				80ABAC2D65FECC490B1E081D757362F9 /* FLKAutoLayoutPredicateList.h in Headers */,
+				E5FCB2D5446EEFD8031B1A3879203167 /* NSLayoutConstraint+FLKAutoLayoutDebug.h in Headers */,
+				D7C7F2B2CE707D7737F5E44AD6825390 /* NSObject+FLKAutoLayoutDebug.h in Headers */,
+				0896D88292344A5C130953694177CE26 /* UIView+FLKAutoLayout.h in Headers */,
+				C630E85370139542CBFC48EC76016159 /* UIView+FLKAutoLayoutDebug.h in Headers */,
+				E08855B2702716949A7D625872785512 /* UIView+FLKAutoLayoutPredicate.h in Headers */,
+				F07F2599B2BC2FE74E16C8A3C9B9BC53 /* UIViewController+FLKAutoLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95900B6D9C041FD89421F3CA35112CC4 /* Headers */ = {
+		5552441B062B852669D3B34A7149EEEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1772B4066E7DE74C1CB3B34EAFC2409 /* FLKAutoLayout.h in Headers */,
-				9A18E4E77F26C271DFCA43E3BFA6921F /* FLKAutoLayoutPredicateList.h in Headers */,
-				F925890EF24AABC29FD00820D5EE1EAC /* NSLayoutConstraint+FLKAutoLayoutDebug.h in Headers */,
-				46F3D9073A49A46E11896B47E3506308 /* NSObject+FLKAutoLayoutDebug.h in Headers */,
-				91D4268327BFFA7F87B6701126111344 /* UIView+FLKAutoLayout.h in Headers */,
-				0EFF617FB3B7722390581B4382E5DD28 /* UIView+FLKAutoLayoutDebug.h in Headers */,
-				0DF9AB1E4C5F08DEF14471A718569228 /* UIView+FLKAutoLayoutPredicate.h in Headers */,
-				2033A8B7260BE31D4C42E58524841091 /* UIViewController+FLKAutoLayout.h in Headers */,
+				66EA77EDFA816FAFCB0C9E679FDF50BA /* AGCDescription.h in Headers */,
+				149390F8CA11530E0EA6548BFEA03DA0 /* AGCObject.h in Headers */,
+				047CC273F61073B8816A8826BD09C190 /* AGCObjectDescription.h in Headers */,
+				E25D9D792301A8ECEF6BE901D347F03D /* AGCObjectInCollection.h in Headers */,
+				35D2A29D290001C524982E56F459717C /* AGCObjectInCollectionDescription.h in Headers */,
+				C809539AF9C9DE94EA0371408B07D1A9 /* AGCPropertiesExtractor.h in Headers */,
+				C899394A935194AE55C6E574A5069DBF /* AGCProperty.h in Headers */,
+				6E4AFD765167C7DDF7B468562231549C /* AGCPropertyConstants.h in Headers */,
+				069B43798708E0E1F0D152771AD39862 /* AGCPropertyDescription.h in Headers */,
+				923704226B4C678EA368F13F722AFEF0 /* AGCPropertyProt.h in Headers */,
+				CCD934E43FDF3103A6D61D5288D68B63 /* NSObject+AGCDescription.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB2B7C10ABFEE96FBC95468783A55D07 /* Headers */ = {
+		85A95E51E09014F12A26B4897B8F7BE0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011CD3B1F5EDDBBF0C4E242E4C42C937 /* AGCDescription.h in Headers */,
-				5A71C7EA33ECA4D47E8863E0B89D392A /* AGCObject.h in Headers */,
-				9A8DFD6F18DA5BD2CA9B8053DC259F7E /* AGCObjectDescription.h in Headers */,
-				C7E461A7AC3EE03988635917DE0DD50C /* AGCObjectInCollection.h in Headers */,
-				10567B56690A279DAE2A66E675D05CA0 /* AGCObjectInCollectionDescription.h in Headers */,
-				10B4F2DFF553C26B3EC79345D1446FB3 /* AGCPropertiesExtractor.h in Headers */,
-				EF88C03906E66BAA9681572A1B61919B /* AGCProperty.h in Headers */,
-				F72635E34C618CD981ED55E4D16D5D5A /* AGCPropertyConstants.h in Headers */,
-				F805CADF164A54F3757760CC49A64BCE /* AGCPropertyDescription.h in Headers */,
-				977CA91DA00FF3943F25E9D1FC645681 /* AGCPropertyProt.h in Headers */,
-				0FDEFCB2A88CD26EB7EDA2A363161F7F /* NSObject+AGCDescription.h in Headers */,
+				92FBEE8C51752177DAC5DE11742716FB /* AGCInitialsColors.h in Headers */,
+				70FAC92FDAAE513F24652488C08C5288 /* UIImageView+AGCInitials.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F619973AB01F7B265138B07003469486 /* Headers */ = {
+		BFD6CD6BE5A64CE49045CC9EA325404E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B0502AF70AA559F30AF00FE39F90F0D /* NSObject+VeeCommons.h in Headers */,
-				B645B16DDC5212E729A60FDE3F439278 /* UILabel+VeeBoldify.h in Headers */,
-				B2A113E7CE895B4CD8AE075076905B47 /* VeeABDelegate.h in Headers */,
-				FD0B805E745CAB25577608034BBD94CB /* VeeABRecord.h in Headers */,
-				330B2113D9AC4711E2DFD37C89D45A4D /* VeeABRecordsImporter.h in Headers */,
-				E4F4470AA472BB66CE57FCC90AEB5CEE /* VeeAddressBook.h in Headers */,
-				6C8CDC3F7D55178CB63585D62714D5C8 /* VeeCommons.h in Headers */,
-				582B00F67CBF8BEA0A55BC7033ED1494 /* VeeContact.h in Headers */,
-				DD8A5ED7F3DC585CBF4C87C53A16E01F /* VeeContactCellConfiguration.h in Headers */,
-				3041D6972C8CED7EC4E67F50508E0800 /* VeeContactFactory.h in Headers */,
-				34E1601BAE8356AFD46D81BAD7C26F1C /* VeeContactFactoryProt.h in Headers */,
-				ED42E372E25010DCF5243F5C90432E3A /* VeeContactPickerAppearanceConstants.h in Headers */,
-				0875ED313E66CF3851DBE79281A9C081 /* VeeContactPickerDelegate.h in Headers */,
-				8BA0DA2EE7126A3F858D7B78102690F3 /* VeeContactPickerOptions.h in Headers */,
-				436C9F43F49A967F0C1D6152E57D1234 /* VeeContactPickerStrings.h in Headers */,
-				F035308FCC5EB70E1D23243CD8826EF1 /* VeeContactPickerViewController.h in Headers */,
-				1B383B28884CE8D38CB9C19E440FAA35 /* VeeContactProt.h in Headers */,
-				24C6EC13D77D90510EF4D04BC4E370E8 /* VeeContactProtFactoryProducer.h in Headers */,
-				4BFB9965B0A737D430EFD0A07774A029 /* VeeContactUITableViewCell.h in Headers */,
-				2706707CCA84C103759489B176410716 /* VeePostalAddress.h in Headers */,
-				FA87C656B6CA6FEF90326757FA37C455 /* VeePostalAddressProt.h in Headers */,
-				C90DAABFA1FDE729E3C3C1B93D34CF2B /* VeeSearchResultsDelegate.h in Headers */,
-				AFB18765BF37F902931EC416680F7863 /* VeeSectionable.h in Headers */,
-				313872D4506542E78EDFE61ED2823939 /* VeeSectionedArrayDataSource.h in Headers */,
-				82AD42EB689BD921E670FC8304085D54 /* VeeTableViewSearchDelegate.h in Headers */,
+				C4945BF00E7C57BB73562DD5BC37D898 /* NSInvocation+OCMAdditions.h in Headers */,
+				D754D52C9C0FC5FDA9D79E359A5CEB63 /* NSMethodSignature+OCMAdditions.h in Headers */,
+				BAB1064596A60C4276F829E999F8DA09 /* NSNotificationCenter+OCMAdditions.h in Headers */,
+				071C795CC71CDDD3C56FF4FB99BAB16A /* NSObject+OCMAdditions.h in Headers */,
+				5DDD30521A688DD230E86D4063DE9ACE /* NSValue+OCMAdditions.h in Headers */,
+				B1AC1794DFE45C57D210A79052838297 /* OCClassMockObject.h in Headers */,
+				02527DFB122F73BD3DC8C8A86222F3E2 /* OCMArg.h in Headers */,
+				8C0953C1AC4AB2190448FF3A55C62E0D /* OCMArgAction.h in Headers */,
+				D87328037AC62BC698D991279FD5F164 /* OCMBlockArgCaller.h in Headers */,
+				AA9AA7A3EAEF09E92599670C1885504A /* OCMBlockCaller.h in Headers */,
+				F7FCFD7F34645ED9E8886376A898C234 /* OCMBoxedReturnValueProvider.h in Headers */,
+				A6716718F0720573DD09B43478440C62 /* OCMConstraint.h in Headers */,
+				9A74DA82A9D3063746279C945A504066 /* OCMExceptionReturnValueProvider.h in Headers */,
+				FCC7872E4A0286DF5A01DE195F59B67B /* OCMExpectationRecorder.h in Headers */,
+				CF01D468B955B1B9169A3D1449FD51AE /* OCMFunctions.h in Headers */,
+				868EDDCF8D50052A1262B33D8DA9A0BA /* OCMFunctionsPrivate.h in Headers */,
+				BAC0BDE87C9152E6C109755515C1D26F /* OCMIndirectReturnValueProvider.h in Headers */,
+				972A4220F1E6DCFDB7A133F086550C08 /* OCMInvocationExpectation.h in Headers */,
+				FCEB3964FE34FF08B22C795DB6EFA25B /* OCMInvocationMatcher.h in Headers */,
+				9D6926B60DD04448C4BDDD147AEFC492 /* OCMInvocationStub.h in Headers */,
+				79DF9CFB844A065CD77BAF14980BDBC2 /* OCMLocation.h in Headers */,
+				D1814014B42FFD24504C6CDCA48CE234 /* OCMMacroState.h in Headers */,
+				CB4A0138FBBDB6FAA80F4F6ABB35EECD /* OCMNotificationPoster.h in Headers */,
+				F9181CD269B33C9EDD91B8FB3A54C168 /* OCMObserverRecorder.h in Headers */,
+				DB48261589D027DD4B14F7F3FAA7F99F /* OCMock.h in Headers */,
+				546648651CF99C9D510F604F8080C939 /* OCMockObject.h in Headers */,
+				3D159D347B9908C3BB57E42A8EB29871 /* OCMPassByRefSetter.h in Headers */,
+				3D299CAA41D55E4950FC06710D29AE4A /* OCMRealObjectForwarder.h in Headers */,
+				6239AB839A4F9FE4953AA410600CFF3D /* OCMRecorder.h in Headers */,
+				939F28B70AF3325A78E11C5C765865A0 /* OCMReturnValueProvider.h in Headers */,
+				3C282F482CB14200D161D2262EF37C27 /* OCMStubRecorder.h in Headers */,
+				F261D98AE9E878D134AA810D28E6B84D /* OCMVerifier.h in Headers */,
+				5649F42543F309D40B3A502A20FE253D /* OCObserverMockObject.h in Headers */,
+				DDB838F57DB6DC25B7DBF63B39C46783 /* OCPartialMockObject.h in Headers */,
+				8376E391D1DA98F25B7A66D4568CC8DC /* OCProtocolMockObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4A2CAA839F2722C796C6F1DFDC806B92 /* OCMock */ = {
+		4D9F1DD436DA9B331498AA12F501CCA3 /* UIImageView-AGCInitials */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10542776D8ACCA3DA970BD708ACC2AF4 /* Build configuration list for PBXNativeTarget "OCMock" */;
+			buildConfigurationList = 4361B1B3DE9273F3803AFF546DAA4A28 /* Build configuration list for PBXNativeTarget "UIImageView-AGCInitials" */;
 			buildPhases = (
-				33CF95FAFC48226F1A54C85AA1529B40 /* Sources */,
-				4C2602132A1D207DB135342BF83AB581 /* Frameworks */,
-				5AFF86D43561748E7227622A6EDDA92B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OCMock;
-			productName = OCMock;
-			productReference = E816531A432DA6CC0E52D9EDE0F1ACCD /* libOCMock.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		6847C6CB33DBF8940D3CDE909D94E97A /* FLKAutoLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFB108372E88D3EF134EC350DC079315 /* Build configuration list for PBXNativeTarget "FLKAutoLayout" */;
-			buildPhases = (
-				402B7840621DCAA3F86DB2E424A53272 /* Sources */,
-				1E1584CC3B38524000807DCCE032F503 /* Frameworks */,
-				95900B6D9C041FD89421F3CA35112CC4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FLKAutoLayout;
-			productName = FLKAutoLayout;
-			productReference = AEE26AF7508F6BE2C2E2D67FA1F9203F /* libFLKAutoLayout.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7F09197B40157F946897CBB4BF0A3850 /* Pods-VeeContactPicker_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E0322F08E706FBAF7F90483F0AAE2437 /* Build configuration list for PBXNativeTarget "Pods-VeeContactPicker_Example" */;
-			buildPhases = (
-				15AC2B7A229EF826B9A1A8D4E24FD78E /* Sources */,
-				C25CDF71753480A844B3EBD054BAB4F3 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				47F066F9744C45B15C590528B2F536FB /* PBXTargetDependency */,
-				CA6BE6A856210A3011F812D709A27C1B /* PBXTargetDependency */,
-				BCCC714E88294A3E5FB29DB99C33AE47 /* PBXTargetDependency */,
-				8DD9BADAE26CD50947FA3C63B52D9E01 /* PBXTargetDependency */,
-			);
-			name = "Pods-VeeContactPicker_Example";
-			productName = "Pods-VeeContactPicker_Example";
-			productReference = C992C92B34F287A560782701B6936176 /* libPods-VeeContactPicker_Example.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		8C62A3D59CBE3664668919A00BC68FDB /* NSObject-AGCDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1D0D3C2A2AB8D8BE6698D20AA301F273 /* Build configuration list for PBXNativeTarget "NSObject-AGCDescription" */;
-			buildPhases = (
-				75C09CA76AD62F8ABA51C8EB22EC9F59 /* Sources */,
-				960299D0307E48086D9959656EE660C8 /* Frameworks */,
-				EB2B7C10ABFEE96FBC95468783A55D07 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "NSObject-AGCDescription";
-			productName = "NSObject-AGCDescription";
-			productReference = FD2B48DDE2B3073250F41DD94F20525C /* libNSObject-AGCDescription.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		933CD5E524900E19D0DDD238A4A2247C /* VeeContactPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0359495FB5627661D1AD2E3DEDE9967 /* Build configuration list for PBXNativeTarget "VeeContactPicker" */;
-			buildPhases = (
-				00546077DBE4D85851934B01168FF5C9 /* Sources */,
-				B552E65283DAD2E02A86AD247DE4AEC7 /* Frameworks */,
-				F619973AB01F7B265138B07003469486 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53A63143B1DBE139929153C6441D92DF /* PBXTargetDependency */,
-				2C4082509040CF12CDEACBE82DBCA28F /* PBXTargetDependency */,
-				9F3CE928229A1508095115B71CC81CBB /* PBXTargetDependency */,
-				83299C5F747E0FF40098ECD010B5513B /* PBXTargetDependency */,
-			);
-			name = VeeContactPicker;
-			productName = VeeContactPicker;
-			productReference = 918308A652DAD2AEA753251AC115AD36 /* libVeeContactPicker.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		AD9C8BD84E13A4A550EBD92C5C7409AF /* VeeContactPicker-VeeContactPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5DA74AE1A7B4A2A00F8CDD0D116CA0ED /* Build configuration list for PBXNativeTarget "VeeContactPicker-VeeContactPicker" */;
-			buildPhases = (
-				6D82BDF5B057C0DABA2269B10EC89E90 /* Sources */,
-				A43268E2CCE829DA583D36B59BDBC3A8 /* Frameworks */,
-				8B97D653939E3BE1B493E651BE91454C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "VeeContactPicker-VeeContactPicker";
-			productName = "VeeContactPicker-VeeContactPicker";
-			productReference = 0BEDF3154FE6BA6833ADCC8D08A5AD34 /* VeeContactPicker.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		B8739893A42D32E4A913F5DAD50E7A9D /* UIImageView-AGCInitials */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 260F1AC7316BAEE4EEAA6F89553A964F /* Build configuration list for PBXNativeTarget "UIImageView-AGCInitials" */;
-			buildPhases = (
-				CAAB46B50DBAE68708538F1295B57540 /* Sources */,
-				6C22463849E947A7647C86725189B1BA /* Frameworks */,
-				94EFEDAA6DAB4496973C4591F9C949CF /* Headers */,
+				229F268F0D8512DA7C8EC755D018285C /* Sources */,
+				6C1B7A8C0F2C08D51FCA68E587FDA800 /* Frameworks */,
+				85A95E51E09014F12A26B4897B8F7BE0 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1241,26 +1139,135 @@
 			productReference = A6C6B0A40B750728528589C282D4671C /* libUIImageView-AGCInitials.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C7756712E3C149873B203B95D1A9BE1D /* Pods-VeeContactPicker_Tests */ = {
+		6C606E177818BAA95D477DBBDCA5B596 /* Pods-VeeContactPicker_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A7A104BB72C944CB90E876509AEB311 /* Build configuration list for PBXNativeTarget "Pods-VeeContactPicker_Tests" */;
+			buildConfigurationList = 4297C3AED46A103CCFC61AC3326A3B0D /* Build configuration list for PBXNativeTarget "Pods-VeeContactPicker_Tests" */;
 			buildPhases = (
-				531598EC8A3399DA3494AD2D29B9F8F8 /* Sources */,
-				32E6E9433F95C4E7E8FC48E2B4CB2572 /* Frameworks */,
+				C0B84940B887393B612817A8DA69D00D /* Sources */,
+				831F1262C1753E0853FE3261B36D880E /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ADF20F356B886E374587D7E68A212571 /* PBXTargetDependency */,
-				3810E45CCD87E73BFF9EAE7849D52885 /* PBXTargetDependency */,
-				61B4163031D7A085463459093298A389 /* PBXTargetDependency */,
-				C040DA818BE0BF3CFAF5857B110C053E /* PBXTargetDependency */,
-				5821A83B910C6891B0CF4284EBE64ADA /* PBXTargetDependency */,
+				1953BF4EEF15D191DB817C1B9B9B0DF0 /* PBXTargetDependency */,
+				7160F76A6B411DE9A7F8C5E0BF0757EF /* PBXTargetDependency */,
+				51DD3F81B2C2A9EB800CF8D5FC077DA3 /* PBXTargetDependency */,
+				91E28B4964C918E2B718E7F9E418A4F7 /* PBXTargetDependency */,
+				103AD778A30562447CC16A882074E577 /* PBXTargetDependency */,
 			);
 			name = "Pods-VeeContactPicker_Tests";
 			productName = "Pods-VeeContactPicker_Tests";
 			productReference = 539C69674DE414733E68E6BE3911E0E5 /* libPods-VeeContactPicker_Tests.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		A561198B7669F579C29FC6864AE4991F /* OCMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD5A0F6DBE3892A6E331DD367E18E11 /* Build configuration list for PBXNativeTarget "OCMock" */;
+			buildPhases = (
+				245D3B37990476181F0C81D747F3AAB7 /* Sources */,
+				7DF57E93702F9036FEE931B449D6D803 /* Frameworks */,
+				BFD6CD6BE5A64CE49045CC9EA325404E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCMock;
+			productName = OCMock;
+			productReference = E816531A432DA6CC0E52D9EDE0F1ACCD /* libOCMock.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A8401A8D55E3408E81393379C98129D9 /* NSObject-AGCDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0655932C150993C7AF53EB7F064F0969 /* Build configuration list for PBXNativeTarget "NSObject-AGCDescription" */;
+			buildPhases = (
+				01D7C6955FBD0F2377916479127B53D8 /* Sources */,
+				05D1466AEF20707CCC506E701C0D6C46 /* Frameworks */,
+				5552441B062B852669D3B34A7149EEEF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSObject-AGCDescription";
+			productName = "NSObject-AGCDescription";
+			productReference = FD2B48DDE2B3073250F41DD94F20525C /* libNSObject-AGCDescription.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A8A3AE78B68DA3AB853AE8B1CB0FCD0E /* FLKAutoLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F8DF95C9AD8F18FFBB647386FCF11D /* Build configuration list for PBXNativeTarget "FLKAutoLayout" */;
+			buildPhases = (
+				5D2EA192841B237420D76B0BDFFFFBA9 /* Sources */,
+				34DCF036B20D8A3D311B7158F03CE57B /* Frameworks */,
+				473B121A40DD103D01C00970E0AB4C3B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLKAutoLayout;
+			productName = FLKAutoLayout;
+			productReference = AEE26AF7508F6BE2C2E2D67FA1F9203F /* libFLKAutoLayout.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE28745BB57D4A357C3516F3F417855F /* VeeContactPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A30C3C8E38A3BA5DEDEAB91BE7EEFA /* Build configuration list for PBXNativeTarget "VeeContactPicker" */;
+			buildPhases = (
+				A47D778BE1B71A65ED689E32C8DB9925 /* Sources */,
+				5581F3FF20B510C68285CCB695887775 /* Frameworks */,
+				350A2596276F44B63BBB1FAFAA4646AB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7037AB269ABB8194188EA423740727 /* PBXTargetDependency */,
+				2A59BDD00AB8CD072C54C60CB550659A /* PBXTargetDependency */,
+				E1C78FC444781A6B9F18E952E04E5959 /* PBXTargetDependency */,
+				8D521EEBF76048E18D67CE71734D7937 /* PBXTargetDependency */,
+			);
+			name = VeeContactPicker;
+			productName = VeeContactPicker;
+			productReference = 918308A652DAD2AEA753251AC115AD36 /* libVeeContactPicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF15A761C2BA2B7146BBA720989836EA /* Pods-VeeContactPicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90FBCC929CA2013F61CAE87854D28D72 /* Build configuration list for PBXNativeTarget "Pods-VeeContactPicker_Example" */;
+			buildPhases = (
+				84E4B36CAA1C559CE9F4D07A7AB8D8CD /* Sources */,
+				73C68191FA6CFD8ECD1318DE33CA7970 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8376EDFEEA71CF30F03E75DE8AB0F550 /* PBXTargetDependency */,
+				69DCAC90DECB4170C201BB1A940B44C8 /* PBXTargetDependency */,
+				07369F3349C7AD9D8B0A7950A2EEFE5C /* PBXTargetDependency */,
+				43C57CD2D4A99F6C41C92DDF08A6BE2E /* PBXTargetDependency */,
+			);
+			name = "Pods-VeeContactPicker_Example";
+			productName = "Pods-VeeContactPicker_Example";
+			productReference = C992C92B34F287A560782701B6936176 /* libPods-VeeContactPicker_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EC91BC7D6D1F9DE76203FDF1AD33D1DA /* VeeContactPicker-VeeContactPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 211A3FB7E9CBC6D05570CB6D8298F7CD /* Build configuration list for PBXNativeTarget "VeeContactPicker-VeeContactPicker" */;
+			buildPhases = (
+				29DF75BBCE2AC0BDE2084160CE3F5E87 /* Sources */,
+				4500E04F6FB00972A6CD20580C4651E1 /* Frameworks */,
+				F72712DD358E3F0D4E9D51C626B907C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VeeContactPicker-VeeContactPicker";
+			productName = "VeeContactPicker-VeeContactPicker";
+			productReference = 0BEDF3154FE6BA6833ADCC8D08A5AD34 /* VeeContactPicker.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -1283,277 +1290,276 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6847C6CB33DBF8940D3CDE909D94E97A /* FLKAutoLayout */,
-				8C62A3D59CBE3664668919A00BC68FDB /* NSObject-AGCDescription */,
-				4A2CAA839F2722C796C6F1DFDC806B92 /* OCMock */,
-				7F09197B40157F946897CBB4BF0A3850 /* Pods-VeeContactPicker_Example */,
-				C7756712E3C149873B203B95D1A9BE1D /* Pods-VeeContactPicker_Tests */,
-				B8739893A42D32E4A913F5DAD50E7A9D /* UIImageView-AGCInitials */,
-				933CD5E524900E19D0DDD238A4A2247C /* VeeContactPicker */,
-				AD9C8BD84E13A4A550EBD92C5C7409AF /* VeeContactPicker-VeeContactPicker */,
+				A8A3AE78B68DA3AB853AE8B1CB0FCD0E /* FLKAutoLayout */,
+				A8401A8D55E3408E81393379C98129D9 /* NSObject-AGCDescription */,
+				A561198B7669F579C29FC6864AE4991F /* OCMock */,
+				CF15A761C2BA2B7146BBA720989836EA /* Pods-VeeContactPicker_Example */,
+				6C606E177818BAA95D477DBBDCA5B596 /* Pods-VeeContactPicker_Tests */,
+				4D9F1DD436DA9B331498AA12F501CCA3 /* UIImageView-AGCInitials */,
+				CE28745BB57D4A357C3516F3F417855F /* VeeContactPicker */,
+				EC91BC7D6D1F9DE76203FDF1AD33D1DA /* VeeContactPicker-VeeContactPicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8B97D653939E3BE1B493E651BE91454C /* Resources */ = {
+		F72712DD358E3F0D4E9D51C626B907C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD416FA8039137FF54B9965E191BF0C /* VeeContactPickerViewController.xib in Resources */,
+				49D6EF5A9975390F38A3C9CAF7F7328F /* VeeContactPickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00546077DBE4D85851934B01168FF5C9 /* Sources */ = {
+		01D7C6955FBD0F2377916479127B53D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				161FCAEBB91E6B5AADF642B85617CB72 /* NSObject+VeeCommons.m in Sources */,
-				48547BFBFFEDF5F6BD92DC4C2C6D0831 /* UILabel+VeeBoldify.m in Sources */,
-				8C0754FA783861F33D4EFA70FE849734 /* VeeABRecord.m in Sources */,
-				0377DA3D4198F9D89E0032382725F260 /* VeeABRecordsImporter.m in Sources */,
-				8AA92B2AC942FE15A538D74B48E49BE0 /* VeeAddressBook.m in Sources */,
-				8D9A8D1FCB6566E99E0A87E9E9149DDC /* VeeCommons.m in Sources */,
-				E1AACE5746942815B420CC6AC774419D /* VeeContact.m in Sources */,
-				96DEE9FBBACC859401C9D19E5D3105E0 /* VeeContactCellConfiguration.m in Sources */,
-				AD2E1DF1D10C40DDC63BF28AB6F29546 /* VeeContactFactory.m in Sources */,
-				36032097F01A22F823C1665F6D0E68F7 /* VeeContactPicker-dummy.m in Sources */,
-				B0152C2CC347464BFC138898568E0FD4 /* VeeContactPickerAppearanceConstants.m in Sources */,
-				226FAF6FEF72A2B6D64E7788FF510482 /* VeeContactPickerOptions.m in Sources */,
-				1B79AFE58958B3B3B00437C058BC15FA /* VeeContactPickerStrings.m in Sources */,
-				5EB7D7B7B81CDF7FBFF0D743117E9A2A /* VeeContactPickerViewController.m in Sources */,
-				044AED427DF6474AC4582F2466E94046 /* VeeContactProtFactoryProducer.m in Sources */,
-				082D917DB4036BF4273E7C310B0B8F13 /* VeeContactUITableViewCell.m in Sources */,
-				B9E61D766AF991D23344A22B8F1CD1A1 /* VeePostalAddress.m in Sources */,
-				5EE2FCF8979602654020E4491F14DD8C /* VeeSectionedArrayDataSource.m in Sources */,
-				287D332DAFE39E0D85746325F224AFF8 /* VeeTableViewSearchDelegate.m in Sources */,
+				DE87E010E15A6A17E2C9CD84DA14A0BA /* AGCDescription.m in Sources */,
+				4818FB97BADD67F4FE64CA621CFCA36E /* AGCObject.m in Sources */,
+				2171DC64C6E7B3ABADFA6DD1B933442F /* AGCObjectDescription.m in Sources */,
+				5204414823A953F9C1F84017390331FF /* AGCObjectInCollection.m in Sources */,
+				508F794E570155FA72BCEB6C832DF347 /* AGCObjectInCollectionDescription.m in Sources */,
+				A29980296DEF5D751452296DBD3AC224 /* AGCPropertiesExtractor.m in Sources */,
+				56C04592C585BB6283343A51605D6645 /* AGCProperty.m in Sources */,
+				F06964CDCB59D5662D93009DF6003846 /* AGCPropertyConstants.m in Sources */,
+				4DCEC6FCB2DEA274669C8EE28FB56A37 /* AGCPropertyDescription.m in Sources */,
+				4771255B022844AA5E6EC3B62D7D941D /* NSObject+AGCDescription.m in Sources */,
+				7F1CC58F62C05C0992B70F5427312F33 /* NSObject-AGCDescription-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15AC2B7A229EF826B9A1A8D4E24FD78E /* Sources */ = {
+		229F268F0D8512DA7C8EC755D018285C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33EDDB8EB7F5F5AC3F018E38DB91E350 /* Pods-VeeContactPicker_Example-dummy.m in Sources */,
+				A85451C7145D0A6646CB4CA861B45500 /* AGCInitialsColors.m in Sources */,
+				8F763FBC363ED17679A12EABA64F3DF9 /* UIImageView+AGCInitials.m in Sources */,
+				956CE3390F64F2DA9CACB228AA7C3C78 /* UIImageView-AGCInitials-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33CF95FAFC48226F1A54C85AA1529B40 /* Sources */ = {
+		245D3B37990476181F0C81D747F3AAB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E00ABE7FC44CB9D1B511D96D47C16AD5 /* NSInvocation+OCMAdditions.m in Sources */,
-				5BB246B2587EBC3E5597DBD6CD33777F /* NSMethodSignature+OCMAdditions.m in Sources */,
-				F0E9BE1709D8B3501A9E791E8D36FBED /* NSNotificationCenter+OCMAdditions.m in Sources */,
-				DADACF239B30C047FA9304E5FDDA8B2E /* NSObject+OCMAdditions.m in Sources */,
-				E2D2C2DEBBB651077ABC3710A423594F /* NSValue+OCMAdditions.m in Sources */,
-				B28B82281F2A75B1A27E9B1B289B179D /* OCClassMockObject.m in Sources */,
-				651F3096B56BFF131C5F956001D7BAAB /* OCMArg.m in Sources */,
-				55F2C7C98AB5E300663D064AAA64B80B /* OCMArgAction.m in Sources */,
-				E8CDCEDCDC0ADE51EBAFCC09F44EFF12 /* OCMBlockArgCaller.m in Sources */,
-				046937EA1C4859D4D96EFA7B7687E441 /* OCMBlockCaller.m in Sources */,
-				672FE514B7C1EB583AF6CEB2538025A7 /* OCMBoxedReturnValueProvider.m in Sources */,
-				55EA7FCA2F507BCC25959CE95D295A8C /* OCMConstraint.m in Sources */,
-				D9EA9C8052853B8962318FFD5A5551B6 /* OCMExceptionReturnValueProvider.m in Sources */,
-				6D2AD1DFA8F27BA0EBB3365A5AF7AC1B /* OCMExpectationRecorder.m in Sources */,
-				9ED6B48F0C000C83C89249483D3398A6 /* OCMFunctions.m in Sources */,
-				830B3A29668D59C62571A4CE4D3BAFCA /* OCMIndirectReturnValueProvider.m in Sources */,
-				CC4F14C27B167A64F09A356652410909 /* OCMInvocationExpectation.m in Sources */,
-				C508640C7607A5BE183916AC4202A026 /* OCMInvocationMatcher.m in Sources */,
-				B4D6973B3F74EB04E719BFCFCBF04C0B /* OCMInvocationStub.m in Sources */,
-				1B7E21160BEF08CC76BA8C17E94E455A /* OCMLocation.m in Sources */,
-				59BC54DA90AD2433D20358F9853622CA /* OCMMacroState.m in Sources */,
-				7EE0FD33AB30006545874DEF02F9243E /* OCMNotificationPoster.m in Sources */,
-				1586CD3BDB1E92D87A0E423AAC313FD4 /* OCMObserverRecorder.m in Sources */,
-				B36995CF7E36CC57C8C118EC5EC049A6 /* OCMock-dummy.m in Sources */,
-				CC5C84B30927F4CE48D7EC04BF652005 /* OCMockObject.m in Sources */,
-				0A7C4089DBD8BD40374AFA8EEAB7CA3C /* OCMPassByRefSetter.m in Sources */,
-				20C39DB909C33B491D60F23FA1D415C2 /* OCMRealObjectForwarder.m in Sources */,
-				3EEE56426C5838CA2F13E8F95B594401 /* OCMRecorder.m in Sources */,
-				A516CB608A827C4FEA550CB372854AF7 /* OCMReturnValueProvider.m in Sources */,
-				4CF0A4AD04F2F3CF7465991A5E76AD47 /* OCMStubRecorder.m in Sources */,
-				03EF931564978791D4ABC400F3FDDBED /* OCMVerifier.m in Sources */,
-				C55C0B0594D26DE09DEC7F161910A211 /* OCObserverMockObject.m in Sources */,
-				DF0A3CB81B12C054F9C8258F680F7C9D /* OCPartialMockObject.m in Sources */,
-				EA2A970253EA9B298F0BB63864AA18D1 /* OCProtocolMockObject.m in Sources */,
+				1CD34D02EC9C728A6A039636D436F569 /* NSInvocation+OCMAdditions.m in Sources */,
+				D0983D6D59B802B2E00F77BEA5D241C4 /* NSMethodSignature+OCMAdditions.m in Sources */,
+				0E1ED31837C555C996AAD4A41709AD75 /* NSNotificationCenter+OCMAdditions.m in Sources */,
+				40BA2C54E635E70E3721EEF46153A898 /* NSObject+OCMAdditions.m in Sources */,
+				D3FA5083C8A87EC5918ED53F18405F32 /* NSValue+OCMAdditions.m in Sources */,
+				1853C34BBA3FC142351D0A2B5A027A7B /* OCClassMockObject.m in Sources */,
+				C4E611BA5BA3E0032D4FA80542FF2033 /* OCMArg.m in Sources */,
+				A64BCD7DECCE4C79E1693C6733E4C71E /* OCMArgAction.m in Sources */,
+				920A24D9C37F9FBF4A76EAECC69E2C75 /* OCMBlockArgCaller.m in Sources */,
+				53464AAD32E1DA4780BF51730BA03325 /* OCMBlockCaller.m in Sources */,
+				B1C7C41369C4FDED19ED391EFABF908E /* OCMBoxedReturnValueProvider.m in Sources */,
+				74F11251752068A4669362418849D8BB /* OCMConstraint.m in Sources */,
+				6D425653C6BAF07E0833A104C2FECF11 /* OCMExceptionReturnValueProvider.m in Sources */,
+				AE761809A4E4FE6602A794A839C2AE0B /* OCMExpectationRecorder.m in Sources */,
+				B805C5FF5FD8D7890DD5F8F2644E0481 /* OCMFunctions.m in Sources */,
+				F76C42A3EEA7F274B51B593374D9E6A1 /* OCMIndirectReturnValueProvider.m in Sources */,
+				40BE9640ECD0F85906CF3491BFC0354A /* OCMInvocationExpectation.m in Sources */,
+				9AA180AC9D8DF08064A18149F30D0D30 /* OCMInvocationMatcher.m in Sources */,
+				F77DFA9A51A4F147887D4D5F65A2C37A /* OCMInvocationStub.m in Sources */,
+				2C29ABF82C3C7C0F5DE3AAA4C2975375 /* OCMLocation.m in Sources */,
+				BF6FB2993CB14EF6BAFB17E6297BC728 /* OCMMacroState.m in Sources */,
+				E8612AABCE826260F2D834D5061AC591 /* OCMNotificationPoster.m in Sources */,
+				E137E0262BC44A50507D01044AEE807B /* OCMObserverRecorder.m in Sources */,
+				767E6A941E740E2C33B4BA722A3DDA04 /* OCMock-dummy.m in Sources */,
+				E6CE7E482261CFBDB354443EFA78D35C /* OCMockObject.m in Sources */,
+				EA9A79135185FA9B8D8E0460B13083A0 /* OCMPassByRefSetter.m in Sources */,
+				41B44EC9ADBC48D8ADD601284B6AE486 /* OCMRealObjectForwarder.m in Sources */,
+				42046743618B167BCEB6214E5CBDE6C1 /* OCMRecorder.m in Sources */,
+				0AC12F1B7957366C81558762D1111533 /* OCMReturnValueProvider.m in Sources */,
+				D4946EC05F4B1948842BB7A8CD50F113 /* OCMStubRecorder.m in Sources */,
+				B6462885514D2F90665D9DC354A0296E /* OCMVerifier.m in Sources */,
+				828BADC5729BF1287CCD1114F2B5A0B4 /* OCObserverMockObject.m in Sources */,
+				CD09AB272C437827BDF24AD1A4E50F61 /* OCPartialMockObject.m in Sources */,
+				7AF70638D3F5705B49D50A24132B23AD /* OCProtocolMockObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		402B7840621DCAA3F86DB2E424A53272 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B8A4D0A4870037490F3FEC4E1CB9676 /* FLKAutoLayout-dummy.m in Sources */,
-				F11816ED4678B81EEF701D11B5725328 /* FLKAutoLayoutPredicateList.m in Sources */,
-				C389E0223F8EEA143FA6575BC6FCFEB1 /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */,
-				95222EEAB12A518FF1D6AD30040EF33E /* NSObject+FLKAutoLayoutDebug.m in Sources */,
-				EB95D653419EF79BF843C2C70B173F30 /* UIView+FLKAutoLayout.m in Sources */,
-				F2509B95DEA7AA63BC41F248842A561D /* UIView+FLKAutoLayoutDebug.m in Sources */,
-				1F202F43B21B79AF717A282AAA064BDE /* UIView+FLKAutoLayoutPredicate.m in Sources */,
-				7E874589704BD228F1B7A3FA95345A3F /* UIViewController+FLKAutoLayout.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		531598EC8A3399DA3494AD2D29B9F8F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				59C10F5CA2C5ACE71EF5CB06AB2B6D38 /* Pods-VeeContactPicker_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D82BDF5B057C0DABA2269B10EC89E90 /* Sources */ = {
+		29DF75BBCE2AC0BDE2084160CE3F5E87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75C09CA76AD62F8ABA51C8EB22EC9F59 /* Sources */ = {
+		5D2EA192841B237420D76B0BDFFFFBA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB70EA6A45DCAD59203B6D3AA2772823 /* AGCDescription.m in Sources */,
-				C11D7D634379188EAD10402E14688994 /* AGCObject.m in Sources */,
-				06878AA07B3F1F28E6F043788A283D0E /* AGCObjectDescription.m in Sources */,
-				FB244D4F1BE42689BC4ABC52CF2A1334 /* AGCObjectInCollection.m in Sources */,
-				7BFB91B8763406120122EE861A9742FC /* AGCObjectInCollectionDescription.m in Sources */,
-				5515E186952EC5F61A7AC018F6E30EDC /* AGCPropertiesExtractor.m in Sources */,
-				DD8B4C3131B13B8EB547C84ABF7E5E22 /* AGCProperty.m in Sources */,
-				B5A894C2AC2DBEE25329D399DC5E84A3 /* AGCPropertyConstants.m in Sources */,
-				48389DBBD3B1D7CC6E645DA7D5677217 /* AGCPropertyDescription.m in Sources */,
-				F9327FB6B7C9AD20FE153A3B0490284C /* NSObject+AGCDescription.m in Sources */,
-				FB7DD68F97F9B78C690E4B9986E1817B /* NSObject-AGCDescription-dummy.m in Sources */,
+				2FA52384A672B490406013A8CABDC52D /* FLKAutoLayout-dummy.m in Sources */,
+				A0DB39CD57153C593DB4C43DCD04C70D /* FLKAutoLayoutPredicateList.m in Sources */,
+				A94709AAB7DE8B156DCA1F3D5EE54889 /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */,
+				BC601DE9DC899B96B11B67DF9260AEFB /* NSObject+FLKAutoLayoutDebug.m in Sources */,
+				9D8616E885D09ADC6D1D5AD0FDF4CD79 /* UIView+FLKAutoLayout.m in Sources */,
+				92D2214BBA44CA953EF23AC29220B2F2 /* UIView+FLKAutoLayoutDebug.m in Sources */,
+				EB4B1625D1E47DF014B0E419B70DDACA /* UIView+FLKAutoLayoutPredicate.m in Sources */,
+				FE1EB725993725F576B79AEC04D10F97 /* UIViewController+FLKAutoLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CAAB46B50DBAE68708538F1295B57540 /* Sources */ = {
+		84E4B36CAA1C559CE9F4D07A7AB8D8CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2B0D27CCCE4B9879AFB3BF8F9DC579 /* AGCInitialsColors.m in Sources */,
-				45FDA65652E689A16B1DC1CF55DAFEAC /* UIImageView+AGCInitials.m in Sources */,
-				95D66AA1D8764C1F1A4C95B7C59CC9BB /* UIImageView-AGCInitials-dummy.m in Sources */,
+				E87EF9E9DC42BB0954F48C289490C51E /* Pods-VeeContactPicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47D778BE1B71A65ED689E32C8DB9925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD01321120D48F00AACDBEC6D240B154 /* NSObject+VeeCommons.m in Sources */,
+				35AEC8E8DA53D6BA2A8AE0DE7AC7F7AF /* UILabel+VeeBoldify.m in Sources */,
+				3D3BD220D4345106D2A12623E23CC247 /* VeeABRecord.m in Sources */,
+				0DCC0E969360AF970A06D8BFE7894C2D /* VeeABRecordsImporter.m in Sources */,
+				D5784877351F93E1899F43F4E0A554FE /* VeeAddressBook.m in Sources */,
+				6AF12723E56BB9D834C2B2D65F9BC759 /* VeeCommons.m in Sources */,
+				5873A6BB4CF694C4952C113D8644DF45 /* VeeContact.m in Sources */,
+				EA45C0DCEA291C3CABCB98F22B602523 /* VeeContactCellConfiguration.m in Sources */,
+				A9977839333E5E89DE6F3A485747D32F /* VeeContactFactory.m in Sources */,
+				A856625DFB175B93855A35FEC919647F /* VeeContactPicker-dummy.m in Sources */,
+				847B73D1541BF56F80D8DD3129CC6072 /* VeeContactPickerAppearanceConstants.m in Sources */,
+				264E7BAA8BB95FA9620602A44F1216B1 /* VeeContactPickerOptions.m in Sources */,
+				EE71CDA2DB81F3D3323C17724E3FFD27 /* VeeContactPickerStrings.m in Sources */,
+				1757FD19F0FA94EB224BFD1886E443E9 /* VeeContactPickerViewController.m in Sources */,
+				C04265F30406E38C2DAF56ABE1874122 /* VeeContactProtFactoryProducer.m in Sources */,
+				FF871DA859FA191E3FA1ADDEB6EA9737 /* VeeContactUITableViewCell.m in Sources */,
+				C232A1DA1ECB1AF800831A96 /* ContactPickerCell.m in Sources */,
+				72D8278FA1F1C5DCECA1C298850A9C22 /* VeePostalAddress.m in Sources */,
+				D81ED1EE2AF9DACC874E4BDBE8C40F54 /* VeeSectionedArrayDataSource.m in Sources */,
+				374D2E9282BFA417F3E81FE1F4D447C5 /* VeeTableViewSearchDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B84940B887393B612817A8DA69D00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F62498C52C661CB1BB6C2177074D7C9 /* Pods-VeeContactPicker_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2C4082509040CF12CDEACBE82DBCA28F /* PBXTargetDependency */ = {
+		07369F3349C7AD9D8B0A7950A2EEFE5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "NSObject-AGCDescription";
-			target = 8C62A3D59CBE3664668919A00BC68FDB /* NSObject-AGCDescription */;
-			targetProxy = F83522923B55C8E5F58E26EDE016E2F1 /* PBXContainerItemProxy */;
+			name = "UIImageView-AGCInitials";
+			target = 4D9F1DD436DA9B331498AA12F501CCA3 /* UIImageView-AGCInitials */;
+			targetProxy = FA40F6BF6FC775418DB5E5BED63B37F4 /* PBXContainerItemProxy */;
 		};
-		3810E45CCD87E73BFF9EAE7849D52885 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "NSObject-AGCDescription";
-			target = 8C62A3D59CBE3664668919A00BC68FDB /* NSObject-AGCDescription */;
-			targetProxy = EAA028FA34FD3A02E8F0F297E8C7E522 /* PBXContainerItemProxy */;
-		};
-		47F066F9744C45B15C590528B2F536FB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FLKAutoLayout;
-			target = 6847C6CB33DBF8940D3CDE909D94E97A /* FLKAutoLayout */;
-			targetProxy = B28228D9CC2378FE3892591D016E1987 /* PBXContainerItemProxy */;
-		};
-		53A63143B1DBE139929153C6441D92DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FLKAutoLayout;
-			target = 6847C6CB33DBF8940D3CDE909D94E97A /* FLKAutoLayout */;
-			targetProxy = F36077E8AB2CD4D4D1A15B2A9FB27EF0 /* PBXContainerItemProxy */;
-		};
-		5821A83B910C6891B0CF4284EBE64ADA /* PBXTargetDependency */ = {
+		103AD778A30562447CC16A882074E577 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VeeContactPicker;
-			target = 933CD5E524900E19D0DDD238A4A2247C /* VeeContactPicker */;
-			targetProxy = 9B3F5B3966338DE46223AD3777C9798D /* PBXContainerItemProxy */;
+			target = CE28745BB57D4A357C3516F3F417855F /* VeeContactPicker */;
+			targetProxy = 84A6D8C811DAC78B41EACF0BA875B028 /* PBXContainerItemProxy */;
 		};
-		61B4163031D7A085463459093298A389 /* PBXTargetDependency */ = {
+		1953BF4EEF15D191DB817C1B9B9B0DF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLKAutoLayout;
+			target = A8A3AE78B68DA3AB853AE8B1CB0FCD0E /* FLKAutoLayout */;
+			targetProxy = 870A8C3FE5B4B44080BD05FE93F12B47 /* PBXContainerItemProxy */;
+		};
+		2A59BDD00AB8CD072C54C60CB550659A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NSObject-AGCDescription";
+			target = A8401A8D55E3408E81393379C98129D9 /* NSObject-AGCDescription */;
+			targetProxy = FEA0B9FCEDFBFB96EA456E1614D5CBEE /* PBXContainerItemProxy */;
+		};
+		43C57CD2D4A99F6C41C92DDF08A6BE2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VeeContactPicker;
+			target = CE28745BB57D4A357C3516F3F417855F /* VeeContactPicker */;
+			targetProxy = B7F5705DA7BC8E40B9FC71A34DD241FC /* PBXContainerItemProxy */;
+		};
+		51DD3F81B2C2A9EB800CF8D5FC077DA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OCMock;
-			target = 4A2CAA839F2722C796C6F1DFDC806B92 /* OCMock */;
-			targetProxy = 2B96C2805E1757D056ECB719830CF128 /* PBXContainerItemProxy */;
+			target = A561198B7669F579C29FC6864AE4991F /* OCMock */;
+			targetProxy = 1101B477052F8041E92A981F7F61EE97 /* PBXContainerItemProxy */;
 		};
-		83299C5F747E0FF40098ECD010B5513B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "VeeContactPicker-VeeContactPicker";
-			target = AD9C8BD84E13A4A550EBD92C5C7409AF /* VeeContactPicker-VeeContactPicker */;
-			targetProxy = D8FE7DD14DB2FA0FE8A6B3BF250D4F56 /* PBXContainerItemProxy */;
-		};
-		8DD9BADAE26CD50947FA3C63B52D9E01 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VeeContactPicker;
-			target = 933CD5E524900E19D0DDD238A4A2247C /* VeeContactPicker */;
-			targetProxy = 2CDC55A95E149BEDE21CBD6FF1A521FB /* PBXContainerItemProxy */;
-		};
-		9F3CE928229A1508095115B71CC81CBB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIImageView-AGCInitials";
-			target = B8739893A42D32E4A913F5DAD50E7A9D /* UIImageView-AGCInitials */;
-			targetProxy = 90BA88C7C69DA58371E2643DDA0118CD /* PBXContainerItemProxy */;
-		};
-		ADF20F356B886E374587D7E68A212571 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FLKAutoLayout;
-			target = 6847C6CB33DBF8940D3CDE909D94E97A /* FLKAutoLayout */;
-			targetProxy = 6E4CA542F7F7B760F9F9CF55A61A2C22 /* PBXContainerItemProxy */;
-		};
-		BCCC714E88294A3E5FB29DB99C33AE47 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIImageView-AGCInitials";
-			target = B8739893A42D32E4A913F5DAD50E7A9D /* UIImageView-AGCInitials */;
-			targetProxy = FEB7773006E5F2B2F19A152736DE40C5 /* PBXContainerItemProxy */;
-		};
-		C040DA818BE0BF3CFAF5857B110C053E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIImageView-AGCInitials";
-			target = B8739893A42D32E4A913F5DAD50E7A9D /* UIImageView-AGCInitials */;
-			targetProxy = E81DC0648F36921194A65A1A3D06DDC7 /* PBXContainerItemProxy */;
-		};
-		CA6BE6A856210A3011F812D709A27C1B /* PBXTargetDependency */ = {
+		69DCAC90DECB4170C201BB1A940B44C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "NSObject-AGCDescription";
-			target = 8C62A3D59CBE3664668919A00BC68FDB /* NSObject-AGCDescription */;
-			targetProxy = D3CFD010885466DBD92F6496968BA777 /* PBXContainerItemProxy */;
+			target = A8401A8D55E3408E81393379C98129D9 /* NSObject-AGCDescription */;
+			targetProxy = E973FE6741A579EBE2716F342B482EB1 /* PBXContainerItemProxy */;
+		};
+		7160F76A6B411DE9A7F8C5E0BF0757EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NSObject-AGCDescription";
+			target = A8401A8D55E3408E81393379C98129D9 /* NSObject-AGCDescription */;
+			targetProxy = A5713285235DCE38E42427CC71DE91D1 /* PBXContainerItemProxy */;
+		};
+		8376EDFEEA71CF30F03E75DE8AB0F550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLKAutoLayout;
+			target = A8A3AE78B68DA3AB853AE8B1CB0FCD0E /* FLKAutoLayout */;
+			targetProxy = 518F0722B63BD2061E79C9E6D5EDD48D /* PBXContainerItemProxy */;
+		};
+		8D521EEBF76048E18D67CE71734D7937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VeeContactPicker-VeeContactPicker";
+			target = EC91BC7D6D1F9DE76203FDF1AD33D1DA /* VeeContactPicker-VeeContactPicker */;
+			targetProxy = 6D2A24F728F4D1CC3A7E4D59E83C0CE8 /* PBXContainerItemProxy */;
+		};
+		91E28B4964C918E2B718E7F9E418A4F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIImageView-AGCInitials";
+			target = 4D9F1DD436DA9B331498AA12F501CCA3 /* UIImageView-AGCInitials */;
+			targetProxy = 705A80F42F6469F6658821669BE8868B /* PBXContainerItemProxy */;
+		};
+		AB7037AB269ABB8194188EA423740727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLKAutoLayout;
+			target = A8A3AE78B68DA3AB853AE8B1CB0FCD0E /* FLKAutoLayout */;
+			targetProxy = 046B2D51A1BEE90D4F48492581A29476 /* PBXContainerItemProxy */;
+		};
+		E1C78FC444781A6B9F18E952E04E5959 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIImageView-AGCInitials";
+			target = 4D9F1DD436DA9B331498AA12F501CCA3 /* UIImageView-AGCInitials */;
+			targetProxy = F26B9B46FA922FE0201A44A9E606A058 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00EBB3809FEC941281453B22CFD61DB1 /* Release */ = {
+		31CFC2E826C283D21623BE9C14BABFDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8364834163CADC611AB2FC3D66CF11D3 /* OCMock.xcconfig */;
+			baseConfigurationReference = 20E5B760625D6AC247CE5745DC333771 /* VeeContactPicker.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VeeContactPicker";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				INFOPLIST_FILE = "Target Support Files/VeeContactPicker/ResourceBundle-VeeContactPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = VeeContactPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
-		02BBC1BF5461C0A9554D01279FB73772 /* Release */ = {
+		3C495708AF1127B23F5E5764D0F2B7C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BE3BE224C2A5D06C37ADA4C1FF21367 /* FLKAutoLayout.xcconfig */;
+			baseConfigurationReference = EA738069E4B56AA241A3DDCE1A822DE5 /* UIImageView-AGCInitials.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FLKAutoLayout/FLKAutoLayout-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageView-AGCInitials/UIImageView-AGCInitials-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -1566,15 +1572,63 @@
 			};
 			name = Release;
 		};
-		03F318BC31B676E2FA683333132060AD /* Debug */ = {
+		3F3CE64A21EB80203EC49F965F2E4E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BE3BE224C2A5D06C37ADA4C1FF21367 /* FLKAutoLayout.xcconfig */;
+			baseConfigurationReference = 8364834163CADC611AB2FC3D66CF11D3 /* OCMock.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FLKAutoLayout/FLKAutoLayout-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		41713411C30E433B5ECA2435380769C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 857AE3739E1B0458545C9506C5BE7190 /* Pods-VeeContactPicker_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6365657C186218052DC3CD65D323CE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA738069E4B56AA241A3DDCE1A822DE5 /* UIImageView-AGCInitials.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageView-AGCInitials/UIImageView-AGCInitials-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -1587,32 +1641,13 @@
 			};
 			name = Debug;
 		};
-		20FC0668467F9935529D32522881B56D /* Release */ = {
+		6FA4A644AD81DF6F2C61ABCA9D4CD178 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CE3F40A80945E4DB5C7848AC933EFFD /* NSObject-AGCDescription.xcconfig */;
+			baseConfigurationReference = 9D96F83D1E47C95AE01EA25C5CFB1BF5 /* Pods-VeeContactPicker_Example.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NSObject-AGCDescription/NSObject-AGCDescription-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		2F6F1BB600F4DA70BB7C9C4AAF1526BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDE41DBDC55562FD769D9590329353F1 /* Pods-VeeContactPicker_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1629,7 +1664,53 @@
 			};
 			name = Debug;
 		};
-		3FA2475660FFC880302AD18E29B2E5FC /* Debug */ = {
+		73C02E281137A7CF109CD2C5EE8C091C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8364834163CADC611AB2FC3D66CF11D3 /* OCMock.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		76EE3F19A77398102C007AD8FED0AD69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE41DBDC55562FD769D9590329353F1 /* Pods-VeeContactPicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1647,6 +1728,202 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		872C08687AC206C3601FD944DFE93FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E5B760625D6AC247CE5745DC333771 /* VeeContactPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VeeContactPicker/VeeContactPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A266F5011F1B6422A26E8C3EFA9FD1C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE3BE224C2A5D06C37ADA4C1FF21367 /* FLKAutoLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FLKAutoLayout/FLKAutoLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A8015B742A3B1FE0959DEB39DEC8ABD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8D51B07A1023AE6782C5FFE91567 /* Pods-VeeContactPicker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B80CF55502D6310BAEF90CC439C95756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE3F40A80945E4DB5C7848AC933EFFD /* NSObject-AGCDescription.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NSObject-AGCDescription/NSObject-AGCDescription-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BD3E02DCEA2B64093764E4B9FFB46D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE3BE224C2A5D06C37ADA4C1FF21367 /* FLKAutoLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FLKAutoLayout/FLKAutoLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C477BFFC1D63675DD074E9ECA29CDEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E5B760625D6AC247CE5745DC333771 /* VeeContactPicker.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VeeContactPicker";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/VeeContactPicker/ResourceBundle-VeeContactPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = VeeContactPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C9D8EBBFDDDC3A6135142A868A0A1349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E5B760625D6AC247CE5745DC333771 /* VeeContactPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VeeContactPicker/VeeContactPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1666,33 +1943,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		457C9B6BEACC52C1ABAC8899BACDFCF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20E5B760625D6AC247CE5745DC333771 /* VeeContactPicker.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VeeContactPicker";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/VeeContactPicker/ResourceBundle-VeeContactPicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = VeeContactPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		489743192218B54E6837D6A07DED2C0C /* Debug */ = {
+		D0B73E72BC590BABF852E0C04CE7474F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5CE3F40A80945E4DB5C7848AC933EFFD /* NSObject-AGCDescription.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1709,255 +1972,23 @@
 			};
 			name = Debug;
 		};
-		7560FDF5A4D2872B5535DC2C5FD54EC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8364834163CADC611AB2FC3D66CF11D3 /* OCMock.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		78B938B8D1B77A7084B6C75ACF16EDAC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20E5B760625D6AC247CE5745DC333771 /* VeeContactPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/VeeContactPicker/VeeContactPicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		863E40E6CE404006C5EC795BDB6F0749 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D96F83D1E47C95AE01EA25C5CFB1BF5 /* Pods-VeeContactPicker_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		87C9BE089ABE9715431F16F543DE2B68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA738069E4B56AA241A3DDCE1A822DE5 /* UIImageView-AGCInitials.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIImageView-AGCInitials/UIImageView-AGCInitials-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A198DA475EF75C084C9E107D4069AE43 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20E5B760625D6AC247CE5745DC333771 /* VeeContactPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/VeeContactPicker/VeeContactPicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A1DC5DF639C673CCF0A36825926E17B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20E5B760625D6AC247CE5745DC333771 /* VeeContactPicker.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VeeContactPicker";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/VeeContactPicker/ResourceBundle-VeeContactPicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = VeeContactPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		A500D0B3155CF5E7F5E34EA7D4A619DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61DE8D51B07A1023AE6782C5FFE91567 /* Pods-VeeContactPicker_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C677FE1BC21478C324EF6F5D77566506 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA738069E4B56AA241A3DDCE1A822DE5 /* UIImageView-AGCInitials.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIImageView-AGCInitials/UIImageView-AGCInitials-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D5EE60E7C2F16E0A719E5A68AF97F4EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 857AE3739E1B0458545C9506C5BE7190 /* Pods-VeeContactPicker_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		F325026B55060D3B22BEC0BAB5FA7344 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10542776D8ACCA3DA970BD708ACC2AF4 /* Build configuration list for PBXNativeTarget "OCMock" */ = {
+		0655932C150993C7AF53EB7F064F0969 /* Build configuration list for PBXNativeTarget "NSObject-AGCDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7560FDF5A4D2872B5535DC2C5FD54EC3 /* Debug */,
-				00EBB3809FEC941281453B22CFD61DB1 /* Release */,
+				D0B73E72BC590BABF852E0C04CE7474F /* Debug */,
+				B80CF55502D6310BAEF90CC439C95756 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D0D3C2A2AB8D8BE6698D20AA301F273 /* Build configuration list for PBXNativeTarget "NSObject-AGCDescription" */ = {
+		211A3FB7E9CBC6D05570CB6D8298F7CD /* Build configuration list for PBXNativeTarget "VeeContactPicker-VeeContactPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				489743192218B54E6837D6A07DED2C0C /* Debug */,
-				20FC0668467F9935529D32522881B56D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		260F1AC7316BAEE4EEAA6F89553A964F /* Build configuration list for PBXNativeTarget "UIImageView-AGCInitials" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87C9BE089ABE9715431F16F543DE2B68 /* Debug */,
-				C677FE1BC21478C324EF6F5D77566506 /* Release */,
+				C477BFFC1D63675DD074E9ECA29CDEA3 /* Debug */,
+				31CFC2E826C283D21623BE9C14BABFDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1965,53 +1996,62 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FA2475660FFC880302AD18E29B2E5FC /* Debug */,
-				F325026B55060D3B22BEC0BAB5FA7344 /* Release */,
+				CF7953F66E785E8876EB4D370D777D50 /* Debug */,
+				79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DA74AE1A7B4A2A00F8CDD0D116CA0ED /* Build configuration list for PBXNativeTarget "VeeContactPicker-VeeContactPicker" */ = {
+		4297C3AED46A103CCFC61AC3326A3B0D /* Build configuration list for PBXNativeTarget "Pods-VeeContactPicker_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				457C9B6BEACC52C1ABAC8899BACDFCF4 /* Debug */,
-				A1DC5DF639C673CCF0A36825926E17B4 /* Release */,
+				76EE3F19A77398102C007AD8FED0AD69 /* Debug */,
+				41713411C30E433B5ECA2435380769C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A7A104BB72C944CB90E876509AEB311 /* Build configuration list for PBXNativeTarget "Pods-VeeContactPicker_Tests" */ = {
+		4361B1B3DE9273F3803AFF546DAA4A28 /* Build configuration list for PBXNativeTarget "UIImageView-AGCInitials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F6F1BB600F4DA70BB7C9C4AAF1526BA /* Debug */,
-				D5EE60E7C2F16E0A719E5A68AF97F4EA /* Release */,
+				6365657C186218052DC3CD65D323CE10 /* Debug */,
+				3C495708AF1127B23F5E5764D0F2B7C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0359495FB5627661D1AD2E3DEDE9967 /* Build configuration list for PBXNativeTarget "VeeContactPicker" */ = {
+		45A30C3C8E38A3BA5DEDEAB91BE7EEFA /* Build configuration list for PBXNativeTarget "VeeContactPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				78B938B8D1B77A7084B6C75ACF16EDAC /* Debug */,
-				A198DA475EF75C084C9E107D4069AE43 /* Release */,
+				872C08687AC206C3601FD944DFE93FDE /* Debug */,
+				C9D8EBBFDDDC3A6135142A868A0A1349 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFB108372E88D3EF134EC350DC079315 /* Build configuration list for PBXNativeTarget "FLKAutoLayout" */ = {
+		5CD5A0F6DBE3892A6E331DD367E18E11 /* Build configuration list for PBXNativeTarget "OCMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03F318BC31B676E2FA683333132060AD /* Debug */,
-				02BBC1BF5461C0A9554D01279FB73772 /* Release */,
+				3F3CE64A21EB80203EC49F965F2E4E5A /* Debug */,
+				73C02E281137A7CF109CD2C5EE8C091C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0322F08E706FBAF7F90483F0AAE2437 /* Build configuration list for PBXNativeTarget "Pods-VeeContactPicker_Example" */ = {
+		83F8DF95C9AD8F18FFBB647386FCF11D /* Build configuration list for PBXNativeTarget "FLKAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				863E40E6CE404006C5EC795BDB6F0749 /* Debug */,
-				A500D0B3155CF5E7F5E34EA7D4A619DD /* Release */,
+				A266F5011F1B6422A26E8C3EFA9FD1C8 /* Debug */,
+				BD3E02DCEA2B64093764E4B9FFB46D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90FBCC929CA2013F61CAE87854D28D72 /* Build configuration list for PBXNativeTarget "Pods-VeeContactPicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FA4A644AD81DF6F2C61ABCA9D4CD178 /* Debug */,
+				A8015B742A3B1FE0959DEB39DEC8ABD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

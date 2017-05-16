@@ -18,31 +18,32 @@
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-
+    
     if (!self) {
         return nil;
     }
     
-    self.backgroundColor = [[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellBackgroundColor];
+    self.backgroundColor = [UIColor clearColor]; // [[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellBackgroundColor];
     [self setCellSelectedBackgroundColor];
     
     [self addContactImageViewToSubView];
     [self addPrimaryLabelToSubView];
-    
+    [self addselctionCheckButtonToSubView];
     return self;
 }
 
 -(void)setCellSelectedBackgroundColor
 {
     UIView *selectedBackgroundView = [[UIView alloc] initWithFrame:self.bounds];
-    [selectedBackgroundView setBackgroundColor:[[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellBackgroundColorWhenSelected]];
+    //[selectedBackgroundView setBackgroundColor:[[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellBackgroundColorWhenSelected]];
+    [selectedBackgroundView setBackgroundColor:[UIColor clearColor]];
     self.selectedBackgroundView = selectedBackgroundView;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     //Avoid background color disappering when selecting cell, see http://stackoverflow.com/questions/5222736/uiview-backgroundcolor-disappears-when-uitableviewcell-is-selected
-
+    
     UIColor* backgroundColor = _contactImageView.backgroundColor;
     [super setSelected:selected animated:animated];
     _contactImageView.backgroundColor = backgroundColor;
@@ -51,7 +52,7 @@
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
 {
     //Avoid background color disappering when selecting cell, see http://stackoverflow.com/questions/5222736/uiview-backgroundcolor-disappears-when-uitableviewcell-is-selected
-
+    
     UIColor* backgroundColor = _contactImageView.backgroundColor;
     [super setHighlighted:highlighted animated:animated];
     _contactImageView.backgroundColor = backgroundColor;
@@ -89,11 +90,20 @@
     [self setConstraintsForPrimaryLabel];
 }
 
+-(void)addselctionCheckButtonToSubView {
+    _selctionCheckButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_selctionCheckButton setBackgroundColor:[UIColor redColor]];
+    [self addSubview:_selctionCheckButton];
+    [_selctionCheckButton setImage:[UIImage imageNamed:@"deSelectCheck.png"] forState:UIControlStateNormal];
+    [_selctionCheckButton setImage:[UIImage imageNamed:@"selectedCheck.png"] forState:UIControlStateSelected];
+    [self setConstraintsForCheckMarkButton];
+}
+
 -(void)setConstraintsForContactImageView
 {
     NSString* contactImageViewDiameterString = [[[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellImageDiameter] stringValue];
     [_contactImageView constrainWidth:contactImageViewDiameterString height:contactImageViewDiameterString];
- 
+    
     NSString* contactImageViewMarginString = [[self contactImageViewMargin] stringValue];
     [_contactImageView alignTop:contactImageViewMarginString leading:contactImageViewMarginString bottom:contactImageViewMarginString trailing:@"0" toView:self.contentView];
 }
@@ -104,6 +114,17 @@
     CGFloat horizontalMarginFromContactImageView = 16;
     [_primaryLabel constrainLeadingSpaceToView:_contactImageView predicate:[@(horizontalMarginFromContactImageView) stringValue]];
     [_primaryLabel constrainWidth:[[self cellWidthWithoutPrimaryLabelWithHorizontalMarginFromContactImageView:horizontalMarginFromContactImageView andHorizontalTrailingSpaceToSuperView:16] stringValue]];
+}
+
+-(void)setConstraintsForCheckMarkButton {
+    [_selctionCheckButton alignCenterYWithView:_contactImageView predicate:@"0"];
+    [_selctionCheckButton constrainWidth:@"30"];
+    [_selctionCheckButton constrainHeight:@"30"];
+    NSString* selectioButtonXpos = [[self selectioButtonXposition] stringValue];
+    [_selctionCheckButton alignTrailingEdgeWithView:self.contentView predicate:selectioButtonXpos];
+}
+-(NSNumber *)selectioButtonXposition {
+    return @(self.frame.size.width);
 }
 
 -(NSNumber*)contactImageViewMargin
@@ -118,5 +139,4 @@
     CGFloat cellWidth = self.contentView.frame.size.width;
     return @(cellWidth - [[self contactImageViewMargin] floatValue] - [[[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellImageDiameter] floatValue] - horizontalTrailingSpaceToSuperView);
 }
-
 @end

@@ -8,5 +8,4 @@ end
 target 'VeeContactPicker_Tests' do
   pod 'VeeContactPicker', :path => '../'
   pod 'OCMock'
-  #pod 'FBSnapshotTestCase'
 end

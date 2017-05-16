@@ -32,8 +32,10 @@
 
 @property (nonatomic, strong) IBOutlet UITableView* contactsTableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem* cancelBarButtonItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *rightBarButtonItem;
 @property (weak, nonatomic) IBOutlet UINavigationItem *titleNavigationItem;
 @property (weak, nonatomic) IBOutlet UILabel *emptyViewLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *groupHederViewHeightConstraint;
 
 #pragma mark - IBActions
 

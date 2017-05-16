@@ -452,12 +452,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "VeeContactPicker_Example" */;
 			buildPhases = (
-				CFE6EC1D4F8A6C66C9ED10A1 /* 📦 Check Pods Manifest.lock */,
+				CFE6EC1D4F8A6C66C9ED10A1 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				61DADD97F6E4ACADDA2E0FF7 /* 📦 Embed Pods Frameworks */,
-				3A14E3329A74297938CA94C0 /* 📦 Copy Pods Resources */,
+				61DADD97F6E4ACADDA2E0FF7 /* [CP] Embed Pods Frameworks */,
+				3A14E3329A74297938CA94C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -472,12 +472,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "VeeContactPicker_Tests" */;
 			buildPhases = (
-				4975B5023E2A7F859C02CE2A /* 📦 Check Pods Manifest.lock */,
+				4975B5023E2A7F859C02CE2A /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				7FBC540A6A976DB9169C5C86 /* 📦 Embed Pods Frameworks */,
-				DBFE9EFC0FE09D4CC428D803 /* 📦 Copy Pods Resources */,
+				7FBC540A6A976DB9169C5C86 /* [CP] Embed Pods Frameworks */,
+				DBFE9EFC0FE09D4CC428D803 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -583,14 +583,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A14E3329A74297938CA94C0 /* 📦 Copy Pods Resources */ = {
+		3A14E3329A74297938CA94C0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,29 +598,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeeContactPicker_Example/Pods-VeeContactPicker_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4975B5023E2A7F859C02CE2A /* 📦 Check Pods Manifest.lock */ = {
+		4975B5023E2A7F859C02CE2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		61DADD97F6E4ACADDA2E0FF7 /* 📦 Embed Pods Frameworks */ = {
+		61DADD97F6E4ACADDA2E0FF7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,14 +628,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeeContactPicker_Example/Pods-VeeContactPicker_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7FBC540A6A976DB9169C5C86 /* 📦 Embed Pods Frameworks */ = {
+		7FBC540A6A976DB9169C5C86 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,29 +643,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeeContactPicker_Tests/Pods-VeeContactPicker_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CFE6EC1D4F8A6C66C9ED10A1 /* 📦 Check Pods Manifest.lock */ = {
+		CFE6EC1D4F8A6C66C9ED10A1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DBFE9EFC0FE09D4CC428D803 /* 📦 Copy Pods Resources */ = {
+		DBFE9EFC0FE09D4CC428D803 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

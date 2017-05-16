@@ -19,14 +19,16 @@
 #import "VeeContactUITableViewCell.h"
 #import "VeeSectionedArrayDataSource.h"
 #import "VeeTableViewSearchDelegate.h"
+#import "ContactPickerCell.h"
 
-@interface VeeContactPickerViewController ()
+@interface VeeContactPickerViewController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 
 #pragma mark - Outlets
 
 @property (weak, nonatomic) IBOutlet UINavigationBar* navigationBar;
 @property (weak, nonatomic) IBOutlet UIView* statusBarCoverView;
 @property (weak, nonatomic) IBOutlet UISearchBar* searchBar;
+@property (weak, nonatomic) IBOutlet UICollectionView *selectedContactsCollectionView;
 
 #pragma mark - Constraints
 
@@ -54,6 +56,12 @@
 #pragma mark - Bundle
 
 @property (nonatomic, strong) NSBundle * podBundle;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *selectedContactsView;
+@property (weak, nonatomic) IBOutlet UIView *scrollContentView;
+
+@property (strong, nonatomic) NSMutableArray *selectedContactsArray;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *selectedContactViewHeightConstraint;
 
 @end
 
@@ -93,6 +101,8 @@
     _veeContacts = veeContacts;
     _veeAddressBook = [[VeeAddressBook alloc] initWithVeeABDelegate:self];
     _veeContactCellConfiguration = [[VeeContactCellConfiguration alloc] initWithVeePickerOptions:_veeContactPickerOptions];
+    _selectedContactsArray = [[NSMutableArray alloc]init];
+
     return self;
 }
 
@@ -114,6 +124,10 @@
     [self loadStrings];
     [self loadPickerAppearance];
     _addressBookRef = ABAddressBookCreate();
+    [self.selectedContactsCollectionView registerClass:[ContactPickerCell class] forCellWithReuseIdentifier:@"cell"];
+  //  [self.selectedContactsCollectionView registerClass:[ class] forCellWithReuseIdentifier:@"cell"];
+    [self.selectedContactsCollectionView setPagingEnabled:YES];
+
     [self loadVeeContacts];
 }
 
@@ -128,16 +142,26 @@
 {
     _titleNavigationItem.title = [_veeContactPickerOptions.veeContactPickerStrings navigationBarTitle];
     _cancelBarButtonItem.title = [_veeContactPickerOptions.veeContactPickerStrings cancelButtonTitle];
+    
 }
 
 - (void)loadPickerAppearance
 {
     _cancelBarButtonItem.tintColor = [[VeeContactPickerAppearanceConstants sharedInstance] cancelBarButtonItemTintColor];
+    _rightBarButtonItem.tintColor = [[VeeContactPickerAppearanceConstants sharedInstance] cancelBarButtonItemTintColor];
+    [_rightBarButtonItem setTitle:@"Next"];
+    [_rightBarButtonItem  setTarget:self];
+    [_rightBarButtonItem setAction:@selector(nextButtonTapped:)];
     _navigationBar.tintColor = [[VeeContactPickerAppearanceConstants sharedInstance] navigationBarTintColor];
     _navigationBar.barTintColor = [[VeeContactPickerAppearanceConstants sharedInstance] navigationBarBarTintColor];
     _navigationBar.translucent = [[VeeContactPickerAppearanceConstants sharedInstance] navigationBarTranslucent];
     _statusBarCoverView.backgroundColor = [[VeeContactPickerAppearanceConstants sharedInstance] navigationBarBarTintColor];
     _tableViewBottomMarginConstraint.constant = [[VeeContactPickerAppearanceConstants sharedInstance] veeContactPickerTableViewBottomMargin];
+    if (_selectedContactsArray.count <= 0)
+        _selectedContactViewHeightConstraint.constant = 10;
+    else
+    	_selectedContactViewHeightConstraint.constant = 90;
+    _groupHederViewHeightConstraint.constant = 0;
     [self hideEmptyView];
 }
 
@@ -257,6 +281,40 @@
     });
 }
 
+-(void)showGroupHeaderView {
+    
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:UIViewAnimationCurveEaseIn
+                     animations:^{
+                         _groupHederViewHeightConstraint.constant = 150;
+                     }
+                     completion:nil];
+}
+
+-(void)hideGroupHeaderView {
+    
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:UIViewAnimationCurveEaseIn
+                     animations:^{
+                         _groupHederViewHeightConstraint.constant = 0;
+                     }
+                     completion:nil];
+}
+-(void)hideSelectedContactsView {
+    
+    __weak typeof(self) weakSelf = self;
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:UIViewAnimationCurveEaseIn
+                     animations:^{
+                         _selectedContactViewHeightConstraint.constant = 10;
+                         [weakSelf hideGroupHeaderView];
+                     }
+                     completion:nil];
+}
+
 #pragma mark - TableView delegate
 
 - (CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
@@ -267,14 +325,25 @@
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    id<VeeContactProt> veeContact = [_veeSectionedArrayDataSource tableView:tableView itemAtIndexPath:indexPath];
+    _selectedContactViewHeightConstraint.constant = 90;
+   id<VeeContactProt> veeContact = [_veeSectionedArrayDataSource tableView:tableView itemAtIndexPath:indexPath];
     if (_contactPickerDelegate) {
         [_contactPickerDelegate didSelectContact:veeContact];
     }
     if (_contactSelectionHandler) {
         _contactSelectionHandler(veeContact);
     }
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [_selectedContactsArray addObject:veeContact];
+    NSIndexPath *index =  [NSIndexPath indexPathForRow:_selectedContactsArray.count-1 inSection:0];
+    [_selectedContactsCollectionView reloadData];
+    [_selectedContactsCollectionView layoutIfNeeded];
+    [_selectedContactsCollectionView scrollToItemAtIndexPath:index atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+    
+    if ([self.searchDisplayController isActive]) {
+        [self.searchDisplayController setActive:NO animated:YES];
+    }
+    
+  //  [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - VeeSearchResultDelegate
@@ -284,6 +353,33 @@
     [_veeSectionedArrayDataSource setSearchResults:searchResults forSearchTableView:searchTableView];
 }
 
+#pragma mark - CollectionView Delegate
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    
+    return _selectedContactsArray.count;
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    ContactPickerCell * cell = (ContactPickerCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    [cell setIndex:indexPath.row];
+    __block typeof(self) weakSelf = self;
+    [cell setRemoveContactClickedBlock:^(int itemIndex) {
+        [weakSelf.selectedContactsArray removeObjectAtIndex:itemIndex];
+        [weakSelf.selectedContactsCollectionView reloadData];
+        if (_selectedContactsArray.count == 0)
+            [weakSelf hideSelectedContactsView];
+    }];
+    [cell setContact:[self.selectedContactsArray objectAtIndex:indexPath.row]];
+    return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return CGSizeMake(60, 90);
+}
+
 #pragma mark - IBActions
 
 - (IBAction)cancelBarButtonItemPressed:(id)sender
@@ -291,5 +387,27 @@
     [_contactPickerDelegate didCancelContactSelection];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+-(void)nextButtonTapped:(id)sender {
+    [_rightBarButtonItem setTitle:@"Continue"];
+    [_rightBarButtonItem setAction:@selector(continueButtonTapped:)];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+       
+        [UIView animateWithDuration:20.0f
+                              delay:0.0f
+                            options:UIViewAnimationOptionTransitionFlipFromTop
+                         animations:^{
+                             _groupHederViewHeightConstraint.constant = 150;
+                         }
+                         completion:nil];
+        
+    });
+}
+
+-(void)continueButtonTapped:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end
