@@ -43,6 +43,7 @@
 #pragma mark - Model
 
 @property (nonatomic, strong) NSArray<id<VeeContactProt> >* veeContacts;
+@property (nonatomic, strong) NSMutableArray<id<VeeContactProt> >* nonSelectedContacts;
 @property (nonatomic, strong) VeeSectionedArrayDataSource* veeSectionedArrayDataSource;
 
 #pragma mark - Search
@@ -99,6 +100,7 @@
     self = [[VeeContactPickerViewController alloc] initWithNibName:NSStringFromClass(self.class) bundle:_podBundle];
     _veeContactPickerOptions = veeContactPickerOptions;
     _veeContacts = veeContacts;
+    _nonSelectedContacts = [NSMutableArray arrayWithArray:_veeContacts];
     _veeAddressBook = [[VeeAddressBook alloc] initWithVeeABDelegate:self];
     _veeContactCellConfiguration = [[VeeContactCellConfiguration alloc] initWithVeePickerOptions:_veeContactPickerOptions];
     _selectedContactsArray = [[NSMutableArray alloc]init];
@@ -198,6 +200,7 @@
     id<VeeContactFactoryProt> veeContactFactoryProt = [VeeContactProtFactoryProducer veeContactProtFactory];
     _veeContacts = [[veeContactFactoryProt class] veeContactProtsFromAddressBook:_addressBookRef];
     _veeContacts = [_veeContacts sortedArrayUsingSelector:@selector(compare:)];
+    _nonSelectedContacts = [NSMutableArray arrayWithArray:_veeContacts];
     [self setupTableView];
 }
 
@@ -218,7 +221,7 @@
 
 - (void)setupSearchDisplayController
 {
-    _veeTableViewSearchDelegate = [[VeeTableViewSearchDelegate alloc] initWithSearchDisplayController:self.searchDisplayController dataToFiler:_veeContacts withPredicate:[self predicateToFilterVeeContactProt] andSearchResultsDelegate:self];
+    _veeTableViewSearchDelegate = [[VeeTableViewSearchDelegate alloc] initWithSearchDisplayController:self.searchDisplayController dataToFiler:_nonSelectedContacts withPredicate:[self predicateToFilterVeeContactProt] andSearchResultsDelegate:self];
 
     [self.searchDisplayController setDelegate:_veeTableViewSearchDelegate];
     [self setupSearchTableView];
@@ -317,28 +320,36 @@
 
 #pragma mark - TableView delegate
 
-- (CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
-{
+
+- (CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
     return [[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellHeight];
 }
 
-- (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSString* cellIdentifier = [[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellIdentifier];
+//    VeeContactUITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+//    id<VeeContactProt> veeContact = [_veeSectionedArrayDataSource tableView:tableView itemAtIndexPath:indexPath];
+//    if ([self isCellSelected:veeContact])
+//        [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+//    else
+//        [tableView deselectRowAtIndexPath:indexPath animated:NO];
+//    
+//    return cell;
+//}
+
+
+- (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath {
+    [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
     _selectedContactViewHeightConstraint.constant = 90;
-   id<VeeContactProt> veeContact = [_veeSectionedArrayDataSource tableView:tableView itemAtIndexPath:indexPath];
+    id<VeeContactProt> veeContact = [_veeSectionedArrayDataSource tableView:tableView itemAtIndexPath:indexPath];
+    [self checkContactIsSelected:veeContact forOperation:Insert];
     if (_contactPickerDelegate) {
         [_contactPickerDelegate didSelectContact:veeContact];
     }
     if (_contactSelectionHandler) {
         _contactSelectionHandler(veeContact);
     }
-    [_selectedContactsArray addObject:veeContact];
-    NSIndexPath *index =  [NSIndexPath indexPathForRow:_selectedContactsArray.count-1 inSection:0];
-    [_selectedContactsCollectionView reloadData];
-    [_selectedContactsCollectionView layoutIfNeeded];
-    [_selectedContactsCollectionView scrollToItemAtIndexPath:index atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
-    
     if ([self.searchDisplayController isActive]) {
         [self.searchDisplayController setActive:NO animated:YES];
     }
@@ -346,6 +357,14 @@
   //  [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    id<VeeContactProt> veeContact = [_veeSectionedArrayDataSource tableView:tableView itemAtIndexPath:indexPath];
+    
+    [self checkContactIsSelected:veeContact forOperation:Remove];
+    
+}
 #pragma mark - VeeSearchResultDelegate
 
 - (void)handleSearchResults:(NSArray*)searchResults forSearchTableView:(UITableView*)searchTableView
@@ -365,11 +384,8 @@
     ContactPickerCell * cell = (ContactPickerCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     [cell setIndex:indexPath.row];
     __block typeof(self) weakSelf = self;
-    [cell setRemoveContactClickedBlock:^(int itemIndex) {
-        [weakSelf.selectedContactsArray removeObjectAtIndex:itemIndex];
-        [weakSelf.selectedContactsCollectionView reloadData];
-        if (_selectedContactsArray.count == 0)
-            [weakSelf hideSelectedContactsView];
+    [cell setRemoveContactClickedBlock:^(int itemIndex, VeeContact *contactToRemove) {
+         [self checkContactIsSelected:contactToRemove forOperation:Remove];
     }];
     [cell setContact:[self.selectedContactsArray objectAtIndex:indexPath.row]];
     return cell;
@@ -378,6 +394,72 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     return CGSizeMake(60, 90);
+}
+#pragma mark - Private Methods
+
+-(void)removeSelectedContactFromHeaderViewAtIndex:(int)index {
+    [self.selectedContactsArray removeObjectAtIndex:index];
+    [_selectedContactsCollectionView reloadData];
+    if (_selectedContactsArray.count == 0)
+        [self hideSelectedContactsView];
+}
+
+-(void)addSelectedContactToHeaderView:(VeeContact *)contact {
+    
+    [_selectedContactsArray addObject:contact];
+    NSIndexPath *index =  [NSIndexPath indexPathForRow:_selectedContactsArray.count-1 inSection:0];
+    [_selectedContactsCollectionView reloadData];
+    [_selectedContactsCollectionView layoutIfNeeded];
+    [_selectedContactsCollectionView scrollToItemAtIndexPath:index atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+}
+
+
+-(BOOL)isCellSelected:(VeeContact *)contact {
+    __block NSInteger foundIndex = NSNotFound;
+    [_selectedContactsArray enumerateObjectsUsingBlock:^(VeeContact *obj, NSUInteger idx, BOOL *stop) {
+        if ([obj.firstName isEqualToString:contact.firstName]  ) {
+            foundIndex = idx;
+            // stop the enumeration
+            *stop = YES;
+        }
+    }];
+    
+    if (foundIndex != NSNotFound) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+-(void)checkContactIsSelected:(VeeContact *)contact forOperation:(OperationType)operation {
+
+    __block NSInteger foundIndex = NSNotFound;
+
+    switch (operation) {
+        case Insert:{
+            [self addSelectedContactToHeaderView:contact];
+            [_nonSelectedContacts removeObject:contact];
+        }
+            break;
+        case Remove: {
+                [_selectedContactsArray enumerateObjectsUsingBlock:^(VeeContact *obj, NSUInteger idx, BOOL *stop) {
+                if ([obj.firstName isEqualToString:contact.firstName]  ) {
+                    foundIndex = idx;
+                     [_nonSelectedContacts addObject:obj];
+                    // stop the enumeration
+                    *stop = YES;
+                }
+            }];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    if (foundIndex != NSNotFound) {
+        [self removeSelectedContactFromHeaderViewAtIndex:foundIndex];
+    }
 }
 
 #pragma mark - IBActions

@@ -66,7 +66,7 @@
 
 - (IBAction)removeButtonTapped:(id)sender {
     if(_removeContactClickedBlock) {
-        _removeContactClickedBlock([sender tag]);
+        _removeContactClickedBlock([sender tag],_contact);
     }
 }
 

@@ -12,7 +12,10 @@
 #import "VeeSearchResultsDelegate.h"
 @class VeeContactPickerOptions;
 @class VeeContactPickerStrings;
-
+typedef enum{
+    Insert = 0,
+    Remove
+}OperationType;
 @interface VeeContactPickerViewController : UIViewController <VeeABDelegate, VeeSearchResultsDelegate, UITableViewDelegate>
 
 #pragma mark - Init

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "VeeContact.h"
 
-typedef void (^RemoveContactClickedBlock)(int itemIndex);
+typedef void (^RemoveContactClickedBlock)(int itemIndex, VeeContact *contactToRemove);
 @interface ContactPickerCell : UICollectionViewCell
 
 @property (assign, nonatomic) NSInteger  *index;

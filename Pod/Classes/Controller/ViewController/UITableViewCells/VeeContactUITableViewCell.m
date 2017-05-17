@@ -47,6 +47,14 @@
     UIColor* backgroundColor = _contactImageView.backgroundColor;
     [super setSelected:selected animated:animated];
     _contactImageView.backgroundColor = backgroundColor;
+    
+    [super setSelected:selected animated:animated];
+    [self.backgroundView setBackgroundColor:[UIColor clearColor]];
+    if (selected) {
+        [_checkmarkImageView setBackgroundColor:[UIColor greenColor]];
+    }else{
+        [_checkmarkImageView setBackgroundColor:[UIColor redColor]];
+    }
 }
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
@@ -91,12 +99,11 @@
 }
 
 -(void)addselctionCheckButtonToSubView {
-    _selctionCheckButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_selctionCheckButton setBackgroundColor:[UIColor redColor]];
-    [self addSubview:_selctionCheckButton];
-    [_selctionCheckButton setImage:[UIImage imageNamed:@"deSelectCheck.png"] forState:UIControlStateNormal];
-    [_selctionCheckButton setImage:[UIImage imageNamed:@"selectedCheck.png"] forState:UIControlStateSelected];
-    [self setConstraintsForCheckMarkButton];
+    _checkmarkImageView = [UIImageView new];
+    [_checkmarkImageView setBackgroundColor:[UIColor redColor]];
+    [self addSubview:_checkmarkImageView];
+    
+    [self setConstraintsForCheckMarkImage];
 }
 
 -(void)setConstraintsForContactImageView
@@ -116,15 +123,15 @@
     [_primaryLabel constrainWidth:[[self cellWidthWithoutPrimaryLabelWithHorizontalMarginFromContactImageView:horizontalMarginFromContactImageView andHorizontalTrailingSpaceToSuperView:16] stringValue]];
 }
 
--(void)setConstraintsForCheckMarkButton {
-    [_selctionCheckButton alignCenterYWithView:_contactImageView predicate:@"0"];
-    [_selctionCheckButton constrainWidth:@"30"];
-    [_selctionCheckButton constrainHeight:@"30"];
-    NSString* selectioButtonXpos = [[self selectioButtonXposition] stringValue];
-    [_selctionCheckButton alignTrailingEdgeWithView:self.contentView predicate:selectioButtonXpos];
+-(void)setConstraintsForCheckMarkImage {
+    [_checkmarkImageView alignCenterYWithView:_contactImageView predicate:@"0"];
+    [_checkmarkImageView constrainWidth:@"30"];
+    [_checkmarkImageView constrainHeight:@"30"];
+    NSString* selectioButtonXpos = [[self checkmarkImageXposition] stringValue];
+    [_checkmarkImageView alignTrailingEdgeWithView:self.contentView predicate:selectioButtonXpos];
 }
--(NSNumber *)selectioButtonXposition {
-    return @(self.frame.size.width);
+-(NSNumber *)checkmarkImageXposition {
+    return @(self.frame.size.width - _contactImageView.frame.size.width);
 }
 
 -(NSNumber*)contactImageViewMargin
