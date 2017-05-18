@@ -62,7 +62,11 @@
 @property (weak, nonatomic) IBOutlet UIView *scrollContentView;
 
 @property (strong, nonatomic) NSMutableArray *selectedContactsArray;
+@property (strong, nonatomic) NSMutableArray *selectedContactsIndexArray;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *selectedContactViewHeightConstraint;
+
+@property (nonatomic, assign) BOOL isRemovingFromHeader;
+@property (nonatomic, assign) BOOL isAddingFromSearchController;
 
 @end
 
@@ -96,7 +100,7 @@
     }
     [self loadBundleOfPod];
     NSAssert(_podBundle,@"Bundle can't be nil");
-
+    
     self = [[VeeContactPickerViewController alloc] initWithNibName:NSStringFromClass(self.class) bundle:_podBundle];
     _veeContactPickerOptions = veeContactPickerOptions;
     _veeContacts = veeContacts;
@@ -104,7 +108,7 @@
     _veeAddressBook = [[VeeAddressBook alloc] initWithVeeABDelegate:self];
     _veeContactCellConfiguration = [[VeeContactCellConfiguration alloc] initWithVeePickerOptions:_veeContactPickerOptions];
     _selectedContactsArray = [[NSMutableArray alloc]init];
-
+    
     return self;
 }
 
@@ -122,14 +126,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    _selectedContactsIndexArray = [NSMutableArray new];
+    
     [self loadStrings];
     [self loadPickerAppearance];
     _addressBookRef = ABAddressBookCreate();
     [self.selectedContactsCollectionView registerClass:[ContactPickerCell class] forCellWithReuseIdentifier:@"cell"];
-  //  [self.selectedContactsCollectionView registerClass:[ class] forCellWithReuseIdentifier:@"cell"];
+    //  [self.selectedContactsCollectionView registerClass:[ class] forCellWithReuseIdentifier:@"cell"];
     [self.selectedContactsCollectionView setPagingEnabled:YES];
-
+    
     [self loadVeeContacts];
 }
 
@@ -140,15 +146,12 @@
 
 #pragma mark - DidLoad Utils
 
-- (void)loadStrings
-{
+- (void)loadStrings {
     _titleNavigationItem.title = [_veeContactPickerOptions.veeContactPickerStrings navigationBarTitle];
     _cancelBarButtonItem.title = [_veeContactPickerOptions.veeContactPickerStrings cancelButtonTitle];
-    
 }
 
-- (void)loadPickerAppearance
-{
+- (void)loadPickerAppearance {
     _cancelBarButtonItem.tintColor = [[VeeContactPickerAppearanceConstants sharedInstance] cancelBarButtonItemTintColor];
     _rightBarButtonItem.tintColor = [[VeeContactPickerAppearanceConstants sharedInstance] cancelBarButtonItemTintColor];
     [_rightBarButtonItem setTitle:@"Next"];
@@ -162,13 +165,13 @@
     if (_selectedContactsArray.count <= 0)
         _selectedContactViewHeightConstraint.constant = 10;
     else
-    	_selectedContactViewHeightConstraint.constant = 90;
+        _selectedContactViewHeightConstraint.constant = 90;
     _groupHederViewHeightConstraint.constant = 0;
     [self hideEmptyView];
 }
 
-- (void)loadVeeContacts
-{
+- (void)loadVeeContacts {
+    
     BOOL shouldLoadVeecontactsFromAB = _veeContacts == nil;
     if (shouldLoadVeecontactsFromAB) {
         BOOL hasAlreadyABPermission = [VeeAddressBook hasABPermissions];
@@ -184,8 +187,8 @@
     }
 }
 
-- (void)loadCustomVeecontacts
-{
+- (void)loadCustomVeecontacts {
+    
     if ([VeeCommons vee_isEmpty:_veeContacts]) {
         [self showEmptyView];
     }
@@ -195,8 +198,8 @@
     }
 }
 
-- (void)loadVeeContactsFromAddressBook
-{
+- (void)loadVeeContactsFromAddressBook {
+    
     id<VeeContactFactoryProt> veeContactFactoryProt = [VeeContactProtFactoryProducer veeContactProtFactory];
     _veeContacts = [[veeContactFactoryProt class] veeContactProtsFromAddressBook:_addressBookRef];
     _veeContacts = [_veeContacts sortedArrayUsingSelector:@selector(compare:)];
@@ -204,31 +207,31 @@
     [self setupTableView];
 }
 
-- (void)setupTableView
-{
+- (void)setupTableView {
+    
     [self registerCellsForReuse];
     ConfigureCellBlock veeContactConfigureCellBlock = ^(VeeContactUITableViewCell* cell, id<VeeContactProt> veeContact) {
         [_veeContactCellConfiguration configureCell:cell forVeeContact:veeContact];
     };
     NSString* cellIdentifier = [[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellIdentifier];
     _veeSectionedArrayDataSource = [[VeeSectionedArrayDataSource alloc] initWithItems:_veeContacts cellIdentifier:cellIdentifier allowedSortedSectionIdentifiers:_veeContactPickerOptions.sectionIdentifiers sectionIdentifierWildcard:_veeContactPickerOptions.sectionIdentifierWildcard configurationCellBlock:veeContactConfigureCellBlock];
-
-    _contactsTableView.dataSource = _veeSectionedArrayDataSource;
+    
+    _contactsTableView.dataSource =  _veeSectionedArrayDataSource;
     _contactsTableView.delegate = self;
     [_contactsTableView reloadData];
     [self setupSearchDisplayController];
 }
 
-- (void)setupSearchDisplayController
-{
+- (void)setupSearchDisplayController {
+    
     _veeTableViewSearchDelegate = [[VeeTableViewSearchDelegate alloc] initWithSearchDisplayController:self.searchDisplayController dataToFiler:_nonSelectedContacts withPredicate:[self predicateToFilterVeeContactProt] andSearchResultsDelegate:self];
-
+    
     [self.searchDisplayController setDelegate:_veeTableViewSearchDelegate];
     [self setupSearchTableView];
 }
 
-- (NSPredicate*)predicateToFilterVeeContactProt
-{
+- (NSPredicate*)predicateToFilterVeeContactProt {
+    
     if ([_veeContacts count] > 0 == NO) {
         return nil;
     }
@@ -236,14 +239,14 @@
     return searchPredicate;
 }
 
-- (void)setupSearchTableView
-{
+- (void)setupSearchTableView {
+    
     self.searchDisplayController.searchResultsTableView.dataSource = _veeSectionedArrayDataSource;
     self.searchDisplayController.searchResultsTableView.delegate = self;
 }
 
-- (void)registerCellsForReuse
-{
+- (void)registerCellsForReuse {
+    
     NSString* cellIdentifier = [[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellIdentifier];
     [_contactsTableView registerClass:[VeeContactUITableViewCell class] forCellReuseIdentifier:cellIdentifier];
     [self.searchDisplayController.searchResultsTableView registerClass:[VeeContactUITableViewCell class] forCellReuseIdentifier:cellIdentifier];
@@ -325,25 +328,19 @@
     return [[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellHeight];
 }
 
-
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NSString* cellIdentifier = [[VeeContactPickerAppearanceConstants sharedInstance] veeContactCellIdentifier];
-//    VeeContactUITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-//    id<VeeContactProt> veeContact = [_veeSectionedArrayDataSource tableView:tableView itemAtIndexPath:indexPath];
-//    if ([self isCellSelected:veeContact])
-//        [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
-//    else
-//        [tableView deselectRowAtIndexPath:indexPath animated:NO];
-//    
-//    return cell;
-//}
-
-
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath {
-    [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+    
+    _isRemovingFromHeader = NO;
+    [tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
     _selectedContactViewHeightConstraint.constant = 90;
     id<VeeContactProt> veeContact = [_veeSectionedArrayDataSource tableView:tableView itemAtIndexPath:indexPath];
-    [self checkContactIsSelected:veeContact forOperation:Insert];
+    if (self.searchDisplayController.active) {
+        _isAddingFromSearchController = YES;
+    	indexPath = [_veeSectionedArrayDataSource indexPathForItem:veeContact];
+    }else
+        _isAddingFromSearchController = NO;    
+    
+    [self checkContactIsSelected:veeContact forOperation:Insert indexPath:indexPath];
     if (_contactPickerDelegate) {
         [_contactPickerDelegate didSelectContact:veeContact];
     }
@@ -354,15 +351,15 @@
         [self.searchDisplayController setActive:NO animated:YES];
     }
     
-  //  [self dismissViewControllerAnimated:YES completion:nil];
+    //  [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    _isRemovingFromHeader = NO;
     id<VeeContactProt> veeContact = [_veeSectionedArrayDataSource tableView:tableView itemAtIndexPath:indexPath];
     
-    [self checkContactIsSelected:veeContact forOperation:Remove];
+    [self checkContactIsSelected:veeContact forOperation:Remove indexPath:indexPath];
     
 }
 #pragma mark - VeeSearchResultDelegate
@@ -385,7 +382,11 @@
     [cell setIndex:indexPath.row];
     __block typeof(self) weakSelf = self;
     [cell setRemoveContactClickedBlock:^(int itemIndex, VeeContact *contactToRemove) {
-         [self checkContactIsSelected:contactToRemove forOperation:Remove];
+        self.isRemovingFromHeader = YES;
+        
+        NSIndexPath *indexPathCorrespondingToTable = [self.selectedContactsIndexArray objectAtIndex:indexPath.item];
+        id<VeeContactProt> veeContact = [self.veeSectionedArrayDataSource tableView:self.contactsTableView itemAtIndexPath:indexPathCorrespondingToTable];
+        [self checkContactIsSelected:veeContact forOperation:Remove indexPath:indexPathCorrespondingToTable];
     }];
     [cell setContact:[self.selectedContactsArray objectAtIndex:indexPath.row]];
     return cell;
@@ -397,11 +398,14 @@
 }
 #pragma mark - Private Methods
 
--(void)removeSelectedContactFromHeaderViewAtIndex:(int)index {
-    [self.selectedContactsArray removeObjectAtIndex:index];
+-(void)removeSelectedContactFromHeaderViewAtIndex:(int)index indexPathCorrespondingToTable:(NSIndexPath *)indexPathCorrespondingToTable {
+    
+    [_selectedContactsArray removeObjectAtIndex:index];
     [_selectedContactsCollectionView reloadData];
     if (_selectedContactsArray.count == 0)
         [self hideSelectedContactsView];
+    if (_isRemovingFromHeader)
+        [_contactsTableView reloadRowsAtIndexPaths:@[indexPathCorrespondingToTable] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 -(void)addSelectedContactToHeaderView:(VeeContact *)contact {
@@ -413,52 +417,52 @@
     [_selectedContactsCollectionView scrollToItemAtIndexPath:index atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
 }
 
-
--(BOOL)isCellSelected:(VeeContact *)contact {
-    __block NSInteger foundIndex = NSNotFound;
-    [_selectedContactsArray enumerateObjectsUsingBlock:^(VeeContact *obj, NSUInteger idx, BOOL *stop) {
-        if ([obj.firstName isEqualToString:contact.firstName]  ) {
-            foundIndex = idx;
-            // stop the enumeration
-            *stop = YES;
-        }
-    }];
+-(void)checkContactIsSelected:(VeeContact *)contact forOperation:(OperationType)operation indexPath:(NSIndexPath *)indexPath {
     
-    if (foundIndex != NSNotFound) {
-        return YES;
-    }
-    
-    return NO;
-}
-
--(void)checkContactIsSelected:(VeeContact *)contact forOperation:(OperationType)operation {
-
     __block NSInteger foundIndex = NSNotFound;
-
+    
     switch (operation) {
         case Insert:{
             [self addSelectedContactToHeaderView:contact];
             [_nonSelectedContacts removeObject:contact];
+            [_selectedContactsIndexArray addObject:indexPath];
+            if (_isAddingFromSearchController) {
+                __block typeof(self) weakSelf = self;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    NSMutableArray *selectedCellsIndexArray;
+                    
+                    if ([_contactsTableView indexPathsForSelectedRows] != nil)
+                        selectedCellsIndexArray = [[_contactsTableView indexPathsForSelectedRows] mutableCopy];
+                    else
+                        selectedCellsIndexArray  = [NSMutableArray array];
+                    
+                    [selectedCellsIndexArray addObject:indexPath];
+                    [_contactsTableView reloadData];
+                    for (NSIndexPath *index in selectedCellsIndexArray) {
+                        [_contactsTableView selectRowAtIndexPath:index animated:YES scrollPosition:UITableViewRowAnimationAutomatic];
+                    }
+                });
+            }
         }
             break;
         case Remove: {
-                [_selectedContactsArray enumerateObjectsUsingBlock:^(VeeContact *obj, NSUInteger idx, BOOL *stop) {
+            [_selectedContactsArray enumerateObjectsUsingBlock:^(VeeContact *obj, NSUInteger idx, BOOL *stop) {
                 if ([obj.firstName isEqualToString:contact.firstName]  ) {
                     foundIndex = idx;
-                     [_nonSelectedContacts addObject:obj];
+                    [_nonSelectedContacts addObject:obj];
                     // stop the enumeration
                     *stop = YES;
                 }
             }];
+            [_selectedContactsIndexArray removeObject:indexPath];
         }
             break;
-            
         default:
             break;
     }
     
     if (foundIndex != NSNotFound) {
-        [self removeSelectedContactFromHeaderViewAtIndex:foundIndex];
+        [self removeSelectedContactFromHeaderViewAtIndex:foundIndex indexPathCorrespondingToTable:indexPath];
     }
 }
 
@@ -475,7 +479,7 @@
     [_rightBarButtonItem setAction:@selector(continueButtonTapped:)];
     
     dispatch_async(dispatch_get_main_queue(), ^{
-       
+        
         [UIView animateWithDuration:20.0f
                               delay:0.0f
                             options:UIViewAnimationOptionTransitionFlipFromTop

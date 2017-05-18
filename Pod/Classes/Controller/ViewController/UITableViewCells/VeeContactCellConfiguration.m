@@ -35,12 +35,6 @@
 {
     [self configureCellLabels:veeContactUITableViewCell forVeeContact:veeContact];
     [self configureCellImage:veeContactUITableViewCell forVeeContact:veeContact];
-    
-    if (veeContactUITableViewCell.selected) {
-        [veeContactUITableViewCell.checkmarkImageView setBackgroundColor:[UIColor greenColor]];
-    }else{
-       [veeContactUITableViewCell.checkmarkImageView setBackgroundColor:[UIColor redColor]];
-    }
 }
 
 #pragma mark - Private utils

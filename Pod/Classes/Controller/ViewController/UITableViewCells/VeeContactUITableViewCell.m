@@ -47,13 +47,13 @@
     UIColor* backgroundColor = _contactImageView.backgroundColor;
     [super setSelected:selected animated:animated];
     _contactImageView.backgroundColor = backgroundColor;
-    
+  
     [super setSelected:selected animated:animated];
     [self.backgroundView setBackgroundColor:[UIColor clearColor]];
     if (selected) {
         [_checkmarkImageView setBackgroundColor:[UIColor greenColor]];
     }else{
-        [_checkmarkImageView setBackgroundColor:[UIColor redColor]];
+        [_checkmarkImageView setBackgroundColor:[UIColor clearColor]];
     }
 }
 
@@ -100,10 +100,13 @@
 
 -(void)addselctionCheckButtonToSubView {
     _checkmarkImageView = [UIImageView new];
-    [_checkmarkImageView setBackgroundColor:[UIColor redColor]];
+    [_checkmarkImageView setBackgroundColor:[UIColor clearColor]];
     [self addSubview:_checkmarkImageView];
-    
     [self setConstraintsForCheckMarkImage];
+    [_checkmarkImageView.layer setCornerRadius:_checkmarkImageView.bounds.size.width/2];
+    _checkmarkImageView.layer.borderColor = [UIColor grayColor].CGColor;
+    _checkmarkImageView.layer.borderWidth = 2.0;
+    [_checkmarkImageView setClipsToBounds:YES];
 }
 
 -(void)setConstraintsForContactImageView
