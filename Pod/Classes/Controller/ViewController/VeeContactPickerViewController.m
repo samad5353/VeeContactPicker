@@ -25,10 +25,13 @@
 
 #pragma mark - Outlets
 
+@property (weak, nonatomic) IBOutlet UILabel *remainingCharactersCountLabel;
+@property (weak, nonatomic) IBOutlet UITextField *groupHeaderTitle;
 @property (weak, nonatomic) IBOutlet UINavigationBar* navigationBar;
 @property (weak, nonatomic) IBOutlet UIView* statusBarCoverView;
 @property (weak, nonatomic) IBOutlet UISearchBar* searchBar;
 @property (weak, nonatomic) IBOutlet UICollectionView *selectedContactsCollectionView;
+@property (weak, nonatomic) IBOutlet UILabel *participantCountLabel;
 
 #pragma mark - Constraints
 
@@ -60,8 +63,6 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *selectedContactsView;
 @property (weak, nonatomic) IBOutlet UIView *scrollContentView;
-
-@property (strong, nonatomic) NSMutableArray *selectedContactsArray;
 @property (strong, nonatomic) NSMutableArray *selectedContactsIndexArray;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *selectedContactViewHeightConstraint;
 
@@ -492,7 +493,9 @@
 }
 
 -(void)continueButtonTapped:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+     [self dismissViewControllerAnimated:YES completion:nil];
+    [_contactPickerDelegate didSelectContacts:_selectedContactsArray];
+   
 }
 
 

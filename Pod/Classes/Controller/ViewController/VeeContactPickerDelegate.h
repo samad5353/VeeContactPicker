@@ -11,6 +11,7 @@
 @required
 
 - (void)didSelectContact:(id<VeeContactProt>)abContact;
+-(void)didSelectContacts:(NSArray<id<VeeContactProt>>*)selectedContacts;
 - (void)didCancelContactSelection;
 - (void)didFailToAccessAddressBook;
 

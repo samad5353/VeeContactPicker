@@ -14,8 +14,11 @@
                 <outlet property="cancelBarButtonItem" destination="xsp-I1-qeu" id="Phf-dh-77O"/>
                 <outlet property="contactsTableView" destination="NzL-9t-n6C" id="JqC-Ov-YUZ"/>
                 <outlet property="emptyViewLabel" destination="nbe-Id-pC7" id="A3S-Ec-z2Q"/>
+                <outlet property="groupHeaderTitle" destination="p3b-Ra-Udb" id="nUO-Xk-rHc"/>
                 <outlet property="groupHederViewHeightConstraint" destination="hPc-hh-akp" id="KQ0-em-a8c"/>
                 <outlet property="navigationBar" destination="IxQ-cp-jGd" id="NCQ-CB-Hae"/>
+                <outlet property="participantCountLabel" destination="qdg-Ei-zMD" id="ADF-yu-Ynb"/>
+                <outlet property="remainingCharactersCountLabel" destination="8bZ-2F-aiy" id="8Y8-cE-jzf"/>
                 <outlet property="rightBarButtonItem" destination="eNT-LA-lb6" id="fqc-PM-pJM"/>
                 <outlet property="scrollContentView" destination="PoV-Pq-RCz" id="MWb-oh-wDv"/>
                 <outlet property="searchBar" destination="Bxf-DJ-a7d" id="Vt9-n9-kD4"/>
@@ -93,7 +96,7 @@
                                     <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Weekend Bash" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p3b-Ra-Udb">
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p3b-Ra-Udb">
                                     <rect key="frame" x="0.0" y="22" width="329" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="YMP-zm-u32"/>
