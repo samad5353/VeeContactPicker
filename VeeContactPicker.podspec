@@ -21,6 +21,5 @@ s.resource_bundles = {
     'VeeContactPicker' => ['Pod/Assets/*.{xib}']
 }
 s.dependency 'UIImageView-AGCInitials'
-s.dependency 'NSObject-AGCDescription'
 s.dependency 'FLKAutoLayout'
 end
